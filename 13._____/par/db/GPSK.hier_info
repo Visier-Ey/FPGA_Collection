@@ -1,0 +1,15 @@
+|GPSK
+sys_clk => ~NO_FANOUT~
+sys_rst_n => ~NO_FANOUT~
+data_in => ~NO_FANOUT~
+da_data[0] <= <GND>
+da_data[1] <= <GND>
+da_data[2] <= <GND>
+da_data[3] <= <GND>
+da_data[4] <= <GND>
+da_data[5] <= <GND>
+da_data[6] <= <GND>
+da_data[7] <= <GND>
+da_clk <= <GND>
+
+

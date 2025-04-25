@@ -69,11 +69,6 @@ set_global_assignment -name EDA_TEST_BENCH_FILE ../sim/NCO_tb.v -section_id NCO_
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE ../rtl/da_wave_send.v
-set_global_assignment -name VERILOG_FILE ../rtl/_NCO.v
-set_global_assignment -name VERILOG_FILE ../rtl/NCO.v
-set_global_assignment -name QIP_FILE ipcore/pll/pll.qip
-set_global_assignment -name QIP_FILE ipcore/rom/rom_256x8b.qip
 
 #system clock:50Mhz
 set_location_assignment PIN_M2 -to sys_clk
@@ -92,3 +87,7 @@ set_location_assignment PIN_T14 -to da_data[6]
 set_location_assignment PIN_R13 -to da_data[7]
 set_location_assignment PIN_N6 -to da_clk
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VERILOG_FILE ../rtl/_NCO.v
+set_global_assignment -name VERILOG_FILE ../rtl/NCO.v
+set_global_assignment -name QIP_FILE ipcore/pll/pll.qip
+set_global_assignment -name QIP_FILE ipcore/rom/rom_256x8b.qip
