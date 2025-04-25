@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Apr 16 19:34:17 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : ip_1port_ram
+Top-level Entity Name : ip_1port_ram
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 891 / 10,320 ( 9 % )
+    Total combinational functions : 531 / 10,320 ( 5 % )
+    Dedicated logic registers : 724 / 10,320 ( 7 % )
+Total registers : 724
+Total pins : 2 / 180 ( 1 % )
+Total virtual pins : 0
+Total memory bits : 3,968 / 423,936 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

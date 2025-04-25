@@ -1,0 +1,208 @@
+Flow report for nco_t
+Fri Apr 25 17:29:43 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-------------------------------------------------------------------------------------------+
+; Flow Summary                                                                              ;
++------------------------------------+------------------------------------------------------+
+; Flow Status                        ; EDA Netlist Writer Failed - Fri Apr 25 17:29:43 2025 ;
+; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition      ;
+; Revision Name                      ; nco_t                                                ;
+; Top-level Entity Name              ; nco_t                                                ;
+; Family                             ; Cyclone IV E                                         ;
+; Device                             ; EP4CE10F17C8                                         ;
+; Timing Models                      ; Final                                                ;
+; Total logic elements               ; 457 / 10,320 ( 4 % )                                 ;
+;     Total combinational functions  ; 434 / 10,320 ( 4 % )                                 ;
+;     Dedicated logic registers      ; 312 / 10,320 ( 3 % )                                 ;
+; Total registers                    ; 312                                                  ;
+; Total pins                         ; 11 / 180 ( 6 % )                                     ;
+; Total virtual pins                 ; 0                                                    ;
+; Total memory bits                  ; 131,072 / 423,936 ( 31 % )                           ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                                       ;
+; Total PLLs                         ; 1 / 2 ( 50 % )                                       ;
++------------------------------------+------------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/25/2025 17:29:17 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; nco_t               ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                           ;
++--------------------------------------+-------------------------------------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                                             ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+-------------------------------------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 90878614117816.174557335705449                                    ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                ; --            ; --          ; NCO_tb                            ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                               ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                               ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                               ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                               ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; NCO_tb                                                            ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                       ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; Questa Intel FPGA (Verilog)                                       ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                   ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/NCO_tb.v                                                   ; --            ; --          ; NCO_tb                            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; NCO_tb                                                            ; --            ; --          ; NCO_tb                            ;
+; EDA_TEST_BENCH_NAME                  ; NCO_tb                                                            ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                                              ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                 ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/../../nco.qsys                          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/nco.v                                   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/sid_2c_1p.v           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/sid_2c_1p.v            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/sid_2c_1p.v         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/sid_2c_1p.v          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_nco_aprid_dxx.v   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_nco_aprid_dxx.v    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_nco_aprid_dxx.v ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_nco_aprid_dxx.v  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_nco_mob_rw.v      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_nco_mob_rw.v       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_nco_mob_rw.v    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_nco_mob_rw.v     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_gar.v             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_gar.v              ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_gar.v           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_gar.v            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_nco_isdr.v        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_nco_isdr.v         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_nco_isdr.v      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_nco_isdr.v       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/segment_arr_tdl.v     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/segment_arr_tdl.v      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/segment_arr_tdl.v   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/segment_arr_tdl.v    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/segment_sel.v         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/segment_sel.v          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/segment_sel.v       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/segment_sel.v        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_dxx_g.v           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_dxx_g.v            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_dxx_g.v         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_dxx_g.v          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_dxx.v             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_dxx.v              ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_dxx.v           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_dxx.v            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_xnqg.v            ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_xnqg.v             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_xnqg.v          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_xnqg.v           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_nco_as_m_cen.v    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_nco_as_m_cen.v     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_nco_as_m_cen.v  ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_nco_as_m_cen.v   ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/mentor/asj_altqmcpipe.v      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/aldec/asj_altqmcpipe.v       ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/synopsys/asj_altqmcpipe.v    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/cadence/asj_altqmcpipe.v     ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/nco_nco_ii_0_sin.hex         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/nco_nco_ii_0_cos.hex         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/nco_nco_ii_0.v               ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/nco_nco_ii_0_tb.vhd          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/c_model/model_wrapper.cpp    ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/c_model/nco_model.cpp        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/simulation/submodules/c_model/nco_model.h          ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/synthesis/../nco.cmp                               ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/nco/nco/synthesis/../../nco.qsys                           ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/pll/pll_bb.v                                               ; --            ; --          ; --                                ;
+; MISC_FILE                            ; ipcore/pll/pll.ppf                                                ; --            ; --          ; --                                ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                                              ; --            ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                            ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                            ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                            ; --            ; --          ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                               ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                             ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                      ; --            ; --          ; --                                ;
+; SLD_FILE                             ; ipcore/nco/nco/synthesis/nco.debuginfo                            ; --            ; --          ; --                                ;
+; SLD_INFO                             ; QSYS_NAME nco HAS_SOPCINFO 1 GENERATION_ID 1745570785             ; --            ; nco         ; --                                ;
+; SOPCINFO_FILE                        ; ipcore/nco/nco/synthesis/../../nco.sopcinfo                       ; --            ; --          ; --                                ;
+; SPD_FILE                             ; ipcore/nco/nco/simulation/../nco.spd                              ; --            ; --          ; --                                ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                ; --            ; --          ; --                                ;
++--------------------------------------+-------------------------------------------------------------------+---------------+-------------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 738 MB              ; 00:00:26                           ;
+; Fitter               ; 00:00:02     ; 1.2                     ; 2154 MB             ; 00:00:04                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 566 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.2                     ; 806 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 797 MB              ; 00:00:02                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:35                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                     ;
++----------------------+------------------+-------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name     ; OS Version ; Processor type ;
++----------------------+------------------+-------------+------------+----------------+
+; Analysis & Synthesis ; fedora           ; Fedora Core ; 41         ; x86_64         ;
+; Fitter               ; fedora           ; Fedora Core ; 41         ; x86_64         ;
+; Assembler            ; fedora           ; Fedora Core ; 41         ; x86_64         ;
+; Timing Analyzer      ; fedora           ; Fedora Core ; 41         ; x86_64         ;
+; EDA Netlist Writer   ; fedora           ; Fedora Core ; 41         ; x86_64         ;
++----------------------+------------------+-------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off nco_t -c nco_t
+quartus_fit --read_settings_files=off --write_settings_files=off nco_t -c nco_t
+quartus_asm --read_settings_files=off --write_settings_files=off nco_t -c nco_t
+quartus_sta nco_t -c nco_t
+quartus_eda --read_settings_files=off --write_settings_files=off nco_t -c nco_t
+
+
+

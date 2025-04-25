@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Apr 24 21:51:38 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : top_FSK
+Top-level Entity Name : top_FSK
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 35 / 10,320 ( < 1 % )
+    Total combinational functions : 35 / 10,320 ( < 1 % )
+    Dedicated logic registers : 17 / 10,320 ( < 1 % )
+Total registers : 17
+Total pins : 5 / 180 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 4 / 423,936 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

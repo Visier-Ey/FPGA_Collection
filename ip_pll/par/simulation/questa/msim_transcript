@@ -1,0 +1,146 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do ip_pll_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Copying /home/visier/altera_lite/24.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl {/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/i_seg_led.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 14:00:50 on Apr 15,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl" /home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/i_seg_led.v 
+# -- Compiling module i_seg_led
+# 
+# Top level modules:
+# 	i_seg_led
+# End time: 14:00:50 on Apr 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl {/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/count.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 14:00:50 on Apr 15,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl" /home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/count.v 
+# -- Compiling module count
+# 
+# Top level modules:
+# 	count
+# End time: 14:00:50 on Apr 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl {/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/ip_pll.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 14:00:50 on Apr 15,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl" /home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/ip_pll.v 
+# -- Compiling module ip_pll
+# 
+# Top level modules:
+# 	ip_pll
+# End time: 14:00:50 on Apr 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par {/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/pll_clk.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 14:00:50 on Apr 15,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par" /home/visier/FPGA_Porject/VisierCustom/ip_pll/par/pll_clk.v 
+# -- Compiling module pll_clk
+# 
+# Top level modules:
+# 	pll_clk
+# End time: 14:00:50 on Apr 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db {/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db/pll_clk_altpll.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 14:00:50 on Apr 15,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db" /home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db/pll_clk_altpll.v 
+# -- Compiling module pll_clk_altpll
+# 
+# Top level modules:
+# 	pll_clk_altpll
+# End time: 14:00:50 on Apr 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb {/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb/pll_clk_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 14:00:50 on Apr 15,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb" /home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb/pll_clk_tb.v 
+# -- Compiling module ip_pll_tb
+# 
+# Top level modules:
+# 	ip_pll_tb
+# End time: 14:00:50 on Apr 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  pll_clk
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" pll_clk 
+# Start time: 14:00:50 on Apr 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.pll_clk(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" work.ip_pll_tb
+# End time: 14:00:59 on Apr 15,2025, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 1
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" work.ip_pll_tb 
+# Start time: 14:00:59 on Apr 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.ip_pll_tb(fast)
+# Loading work.pll_clk(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.i_seg_led(fast)
+# Loading work.count(fast)
+add wave -position insertpoint  \
+sim:/ip_pll_tb/T \
+sim:/ip_pll_tb/clk \
+sim:/ip_pll_tb/sys_clk \
+sim:/ip_pll_tb/sys_rst_n \
+sim:/ip_pll_tb/clk_out100m \
+sim:/ip_pll_tb/clk_out100m_180deg \
+sim:/ip_pll_tb/clk_out50m \
+sim:/ip_pll_tb/clk_out25m \
+sim:/ip_pll_tb/rst_n \
+sim:/ip_pll_tb/locked \
+sim:/ip_pll_tb/count_down
+run 5ms
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: ip_pll_tb.pll_clk_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 110000  Instance: ip_pll_tb.pll_clk_inst.altpll_component.cycloneiii_pll.pll3
+# End time: 14:05:58 on Apr 15,2025, Elapsed time: 0:04:59
+# Errors: 0, Warnings: 1

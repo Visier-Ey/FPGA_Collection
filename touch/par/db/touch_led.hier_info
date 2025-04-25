@@ -1,0 +1,16 @@
+|touch_led
+sys_clk => ~NO_FANOUT~
+sys_rst_n => led[0]~reg0.ACLR
+sys_rst_n => led[1]~reg0.ACLR
+sys_rst_n => led[2]~reg0.ACLR
+sys_rst_n => led[3]~reg0.ACLR
+touch_key => led[0]~reg0.CLK
+touch_key => led[1]~reg0.CLK
+touch_key => led[2]~reg0.CLK
+touch_key => led[3]~reg0.CLK
+led[0] <= led[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

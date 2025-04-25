@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 17 19:08:44 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : hs_ad_da
+Top-level Entity Name : hs_ad_da
+Family : Cyclone IV E
+Total logic elements : 34
+    Total combinational functions : 33
+    Dedicated logic registers : 17
+Total registers : 17
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

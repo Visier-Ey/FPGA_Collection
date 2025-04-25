@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Apr 25 17:29:32 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : nco_t
+Top-level Entity Name : nco_t
+Family : Cyclone IV E
+Total logic elements : 455
+    Total combinational functions : 433
+    Dedicated logic registers : 312
+Total registers : 312
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 131,072
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

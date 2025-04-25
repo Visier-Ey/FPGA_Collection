@@ -1,0 +1,114 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do ip_1port_ram_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is visier@fedora.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Copying /home/visier/altera_lite/24.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl {/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ram_rw.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 19:15:12 on Apr 16,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl" /home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ram_rw.v 
+# -- Compiling module ram_rw
+# 
+# Top level modules:
+# 	ram_rw
+# End time: 19:15:12 on Apr 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl {/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ip_1port_ram.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 19:15:12 on Apr 16,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl" /home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ip_1port_ram.v 
+# -- Compiling module ip_1port_ram
+# 
+# Top level modules:
+# 	ip_1port_ram
+# End time: 19:15:12 on Apr 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore {/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore/ram_1port.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 19:15:12 on Apr 16,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore" /home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore/ram_1port.v 
+# -- Compiling module ram_1port
+# 
+# Top level modules:
+# 	ram_1port
+# End time: 19:15:12 on Apr 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb {/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb/ip_1port_ram_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 19:15:12 on Apr 16,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb" /home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb/ip_1port_ram_tb.v 
+# -- Compiling module ip_1port_ram_tb
+# 
+# Top level modules:
+# 	ip_1port_ram_tb
+# End time: 19:15:12 on Apr 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  ip_1port_ram_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" ip_1port_ram_tb 
+# Start time: 19:15:12 on Apr 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.ip_1port_ram_tb(fast)
+# Loading work.ip_1port_ram(fast)
+# Loading work.ram_rw(fast)
+# Loading work.ram_1port(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# 
+# add wave *
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint  \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_1port/address \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_1port/clock \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_1port/data \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_1port/rden \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_1port/wren \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_1port/q \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_1port/sub_wire0
+run 1ns
+run 10ns
+run 1ms
+add wave -position insertpoint  \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_rw/ram_wr_en \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_rw/ram_rd_en \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_rw/ram_addr \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_rw/ram_wr_data \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_rw/ram_rd_data \
+sim:/ip_1port_ram_tb/u_ip_1port_ram/u_ram_rw/rw_cnt
+run 1ms
+# End time: 19:20:44 on Apr 16,2025, Elapsed time: 0:05:32
+# Errors: 0, Warnings: 1

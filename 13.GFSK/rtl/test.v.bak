@@ -1,0 +1,16 @@
+module test_240314
+(
+    input  wire  sys_clk,
+    input  wire  sys_rst_n
+);
+
+NCO_0314 nco_i1_0 (
+    .clk      (sys_clk),      // clk.clk
+    .reset_n  (sys_rst_n),    // rst.reset_n
+    .clken    (1),            // in.clken
+    .phi_inc_i('di3107'),     // out.fsin_o
+    .fsin_o   ('fcos_o'),
+    .out_valid('fcos_o')
+);
+
+endmodule

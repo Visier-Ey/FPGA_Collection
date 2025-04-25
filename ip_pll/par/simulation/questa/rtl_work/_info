@@ -1,0 +1,188 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/simulation/questa
+T_opt
+!s110 1744696851
+VJ:B?CCW<VP3WQ_f`_;aiV2
+04 7 4 work pll_clk fast 0
+=1-000ae431a4f1-67fdf613-7081-6ab8
+R0
+Z2 !s12f OEM100
+Z3 !s12b OEM100
+!s124 OEM10U1 
+Z4 !s135 nogc
+Z5 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2024.3;79
+R1
+T_opt1
+!s110 1744696866
+V?m]_45a]XiPl0^lzSm_F^2
+04 9 4 work ip_pll_tb fast 0
+=1-000ae431a4f1-67fdf622-d1caf-6b48
+R0
+R2
+R3
+!s124 OEM10U4 
+R4
+R5
+R6
+n@_opt1
+R7
+vcount
+2/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/count.v
+Z8 !s110 1744696850
+!i10b 1
+!s100 ZMW52K;ZINXc^<CNbhRSf0
+IXEZVKBc703M6ifO?k?TMC3
+R1
+w1744556437
+8/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/count.v
+F/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/count.v
+!i122 1
+L0 1 25
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z11 !s108 1744696850.000000
+!s107 /home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/count.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl|/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/count.v|
+!i113 0
+Z12 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vi_seg_led
+2/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/i_seg_led.v
+R8
+!i10b 1
+!s100 GBP5bRM9_bQVLjWj8mU8B1
+I8Rda1HFGiPMEi]UE4VG141
+R1
+w1744646648
+8/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/i_seg_led.v
+F/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/i_seg_led.v
+!i122 0
+L0 1 101
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/i_seg_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl|/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/i_seg_led.v|
+!i113 0
+R12
+R13
+R6
+vip_pll
+2/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/ip_pll.v
+R8
+!i10b 1
+!s100 gZf?ZOT146bi>dKbMmV7=0
+Icgz=A;S7ef`h<C7^9M9HD2
+R1
+w1744696040
+8/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/ip_pll.v
+F/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/ip_pll.v
+!i122 2
+L0 1 48
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/ip_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl|/home/visier/FPGA_Porject/VisierCustom/ip_pll/rtl/ip_pll.v|
+!i113 0
+R12
+R13
+R6
+vip_pll_tb
+2/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb/pll_clk_tb.v
+R8
+!i10b 1
+!s100 g=ziCz?^ZB[D>A_X432[c2
+I=>WA7;=QDV7BQ=M0LLnj70
+R1
+w1744696844
+8/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb/pll_clk_tb.v
+F/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb/pll_clk_tb.v
+!i122 5
+L0 29 65
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb/pll_clk_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb|/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb/pll_clk_tb.v|
+!i113 0
+R12
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/../sim/tb -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vpll_clk
+2/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/pll_clk.v
+R8
+!i10b 1
+!s100 oSY^2HF8Tbz7k]z7VHgLz1
+I6G6dNQ4joVmSmU2_31aGm2
+R1
+w1744679201
+8/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/pll_clk.v
+F/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/pll_clk.v
+!i122 3
+L0 40 148
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /home/visier/FPGA_Porject/VisierCustom/ip_pll/par/pll_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par|/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/pll_clk.v|
+!i113 0
+R12
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vpll_clk_altpll
+2/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db/pll_clk_altpll.v
+R8
+!i10b 1
+!s100 AXLgS7RD7Y67M4Y7`5;CQ3
+IMI>9Q3oJXF:J9Q5jP_<fA0
+R1
+w1744680295
+8/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db/pll_clk_altpll.v
+F/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db/pll_clk_altpll.v
+!i122 4
+L0 31 91
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db/pll_clk_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db|/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db/pll_clk_altpll.v|
+!i113 0
+R12
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/ip_pll/par/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6

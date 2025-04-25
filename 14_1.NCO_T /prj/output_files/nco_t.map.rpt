@@ -1,0 +1,1172 @@
+Analysis & Synthesis report for nco_t
+Fri Apr 25 17:29:32 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: pll:pll_inst|altpll:altpll_component
+ 15. Parameter Settings for User Entity Instance: nco:u0|nco_nco_ii_0:nco_ii_0
+ 16. altpll Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "nco:u0|nco_nco_ii_0:nco_ii_0|segment_sel:rot"
+ 18. Port Connectivity Checks: "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_aprid_dxx:ux0219"
+ 19. Port Connectivity Checks: "nco:u0"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Post-Synthesis Netlist Statistics for Partition pzdyqx:nabboc
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Apr 25 17:29:32 2025           ;
+; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                      ; nco_t                                           ;
+; Top-level Entity Name              ; nco_t                                           ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 455                                             ;
+;     Total combinational functions  ; 433                                             ;
+;     Dedicated logic registers      ; 312                                             ;
+; Total registers                    ; 312                                             ;
+; Total pins                         ; 11                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 131,072                                         ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 1                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE10F17C8       ;                    ;
+; Top-level entity name                                            ; nco_t              ; nco_t              ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 32          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                        ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                              ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------+
+; ipcore/nco/nco/synthesis/nco.v                                     ; yes             ; User Verilog HDL File                        ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/nco.v                                     ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/sid_2c_1p.v                    ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/sid_2c_1p.v                    ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_nco_aprid_dxx.v            ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_aprid_dxx.v            ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_nco_mob_rw.v               ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_mob_rw.v               ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_gar.v                      ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_gar.v                      ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_nco_isdr.v                 ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_isdr.v                 ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/segment_arr_tdl.v              ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/segment_arr_tdl.v              ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/segment_sel.v                  ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/segment_sel.v                  ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_dxx_g.v                    ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_dxx_g.v                    ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_dxx.v                      ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_dxx.v                      ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_xnqg.v                     ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_xnqg.v                     ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v             ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v             ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/asj_altqmcpipe.v               ; yes             ; Encrypted User Verilog HDL File              ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_altqmcpipe.v               ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0_sin.hex           ; yes             ; User Hexadecimal (Intel-Format) File         ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0_sin.hex           ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0_cos.hex           ; yes             ; User Hexadecimal (Intel-Format) File         ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0_cos.hex           ; nco         ;
+; ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v                 ; yes             ; User Verilog HDL File                        ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v                 ; nco         ;
+; ../rtl/nco_t.v                                                     ; yes             ; User Verilog HDL File                        ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v                                                            ;             ;
+; ipcore/pll/pll.v                                                   ; yes             ; User Wizard-Generated File                   ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v                                                   ;             ;
+; altpll.tdf                                                         ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altpll.tdf                                               ;             ;
+; aglobal241.inc                                                     ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                                           ;             ;
+; stratix_pll.inc                                                    ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/stratix_pll.inc                                          ;             ;
+; stratixii_pll.inc                                                  ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/stratixii_pll.inc                                        ;             ;
+; cycloneii_pll.inc                                                  ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/cycloneii_pll.inc                                        ;             ;
+; db/pll_altpll.v                                                    ; yes             ; Auto-Generated Megafunction                  ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/pll_altpll.v                                                    ;             ;
+; lpm_add_sub.tdf                                                    ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_add_sub.tdf                                          ;             ;
+; addcore.inc                                                        ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/addcore.inc                                              ;             ;
+; look_add.inc                                                       ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/look_add.inc                                             ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/bypassff.inc                                             ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altshift.inc                                             ;             ;
+; alt_stratix_add_sub.inc                                            ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                  ;             ;
+; db/add_sub_15i.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/add_sub_15i.tdf                                                 ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                                           ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                                    ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                                              ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc                                           ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                            ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                                               ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altram.inc                                               ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                                             ;             ;
+; db/altsyncram_8n91.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/altsyncram_8n91.tdf                                             ;             ;
+; db/altsyncram_3n91.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/altsyncram_3n91.tdf                                             ;             ;
+; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_counter.tdf                                          ;             ;
+; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_constant.inc                                         ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_add_sub.inc                                          ;             ;
+; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/cmpconst.inc                                             ;             ;
+; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_compare.inc                                          ;             ;
+; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_counter.inc                                          ;             ;
+; dffeea.inc                                                         ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/dffeea.inc                                               ;             ;
+; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/alt_counter_stratix.inc                                  ;             ;
+; db/cntr_asi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/cntr_asi.tdf                                                    ;             ;
+; pzdyqx.vhd                                                         ; yes             ; Encrypted Megafunction                       ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/pzdyqx.vhd                                               ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/sld_hub.vhd                                              ; altera_sld  ;
+; db/ip/slddbe70644/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                         ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/sld_rom_sr.vhd                                           ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                   ;
++---------------------------------------------+---------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                           ;
++---------------------------------------------+---------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 455                                                                             ;
+;                                             ;                                                                                 ;
+; Total combinational functions               ; 433                                                                             ;
+; Logic element usage by number of LUT inputs ;                                                                                 ;
+;     -- 4 input functions                    ; 208                                                                             ;
+;     -- 3 input functions                    ; 76                                                                              ;
+;     -- <=2 input functions                  ; 149                                                                             ;
+;                                             ;                                                                                 ;
+; Logic elements by mode                      ;                                                                                 ;
+;     -- normal mode                          ; 374                                                                             ;
+;     -- arithmetic mode                      ; 59                                                                              ;
+;                                             ;                                                                                 ;
+; Total registers                             ; 312                                                                             ;
+;     -- Dedicated logic registers            ; 312                                                                             ;
+;     -- I/O registers                        ; 0                                                                               ;
+;                                             ;                                                                                 ;
+; I/O pins                                    ; 11                                                                              ;
+; Total memory bits                           ; 131072                                                                          ;
+;                                             ;                                                                                 ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                               ;
+;                                             ;                                                                                 ;
+; Total PLLs                                  ; 1                                                                               ;
+;     -- PLLs                                 ; 1                                                                               ;
+;                                             ;                                                                                 ;
+; Maximum fan-out node                        ; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
+; Maximum fan-out                             ; 269                                                                             ;
+; Total fan-out                               ; 2427                                                                            ;
+; Average fan-out                             ; 3.06                                                                            ;
++---------------------------------------------+---------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                               ; Entity Name                       ; Library Name ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; |nco_t                                                                                                                                  ; 433 (3)             ; 312 (0)                   ; 131072      ; 0            ; 0       ; 0         ; 11   ; 0            ; |nco_t                                                                                                                                                                                                                                                                                                                                            ; nco_t                             ; work         ;
+;    |nco:u0|                                                                                                                             ; 188 (0)             ; 163 (0)                   ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0                                                                                                                                                                                                                                                                                                                                     ; nco                               ; nco          ;
+;       |nco_nco_ii_0:nco_ii_0|                                                                                                           ; 188 (0)             ; 163 (0)                   ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0                                                                                                                                                                                                                                                                                                               ; nco_nco_ii_0                      ; nco          ;
+;          |asj_altqmcpipe:ux000|                                                                                                         ; 32 (16)             ; 17 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000                                                                                                                                                                                                                                                                                          ; asj_altqmcpipe                    ; nco          ;
+;             |lpm_add_sub:acc|                                                                                                           ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000|lpm_add_sub:acc                                                                                                                                                                                                                                                                          ; lpm_add_sub                       ; work         ;
+;                |add_sub_15i:auto_generated|                                                                                             ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000|lpm_add_sub:acc|add_sub_15i:auto_generated                                                                                                                                                                                                                                               ; add_sub_15i                       ; work         ;
+;          |asj_dxx:ux002|                                                                                                                ; 32 (32)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_dxx:ux002                                                                                                                                                                                                                                                                                                 ; asj_dxx                           ; nco          ;
+;          |asj_dxx_g:ux001|                                                                                                              ; 17 (17)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_dxx_g:ux001                                                                                                                                                                                                                                                                                               ; asj_dxx_g                         ; nco          ;
+;          |asj_gar:ux007|                                                                                                                ; 13 (13)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_gar:ux007                                                                                                                                                                                                                                                                                                 ; asj_gar                           ; nco          ;
+;          |asj_nco_as_m_cen:ux0120|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120                                                                                                                                                                                                                                                                                       ; asj_nco_as_m_cen                  ; nco          ;
+;             |altsyncram:altsyncram_component0|                                                                                          ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120|altsyncram:altsyncram_component0                                                                                                                                                                                                                                                      ; altsyncram                        ; work         ;
+;                |altsyncram_8n91:auto_generated|                                                                                         ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120|altsyncram:altsyncram_component0|altsyncram_8n91:auto_generated                                                                                                                                                                                                                       ; altsyncram_8n91                   ; work         ;
+;          |asj_nco_as_m_cen:ux0121|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121                                                                                                                                                                                                                                                                                       ; asj_nco_as_m_cen                  ; nco          ;
+;             |altsyncram:altsyncram_component0|                                                                                          ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121|altsyncram:altsyncram_component0                                                                                                                                                                                                                                                      ; altsyncram                        ; work         ;
+;                |altsyncram_3n91:auto_generated|                                                                                         ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121|altsyncram:altsyncram_component0|altsyncram_3n91:auto_generated                                                                                                                                                                                                                       ; altsyncram_3n91                   ; work         ;
+;          |asj_nco_isdr:ux710isdr|                                                                                                       ; 6 (2)               ; 5 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr                                                                                                                                                                                                                                                                                        ; asj_nco_isdr                      ; nco          ;
+;             |lpm_counter:lpm_counter_component|                                                                                         ; 4 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr|lpm_counter:lpm_counter_component                                                                                                                                                                                                                                                      ; lpm_counter                       ; work         ;
+;                |cntr_asi:auto_generated|                                                                                                ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr|lpm_counter:lpm_counter_component|cntr_asi:auto_generated                                                                                                                                                                                                                              ; cntr_asi                          ; work         ;
+;          |asj_nco_mob_rw:ux122|                                                                                                         ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_mob_rw:ux122                                                                                                                                                                                                                                                                                          ; asj_nco_mob_rw                    ; nco          ;
+;          |segment_arr_tdl:tdl|                                                                                                          ; 15 (15)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|segment_arr_tdl:tdl                                                                                                                                                                                                                                                                                           ; segment_arr_tdl                   ; nco          ;
+;          |segment_sel:rot|                                                                                                              ; 17 (17)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|segment_sel:rot                                                                                                                                                                                                                                                                                               ; segment_sel                       ; nco          ;
+;          |sid_2c_1p:sid2c|                                                                                                              ; 48 (48)             ; 48 (48)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|sid_2c_1p:sid2c                                                                                                                                                                                                                                                                                               ; sid_2c_1p                         ; nco          ;
+;    |pll:pll_inst|                                                                                                                       ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pll:pll_inst                                                                                                                                                                                                                                                                                                                               ; pll                               ; work         ;
+;       |altpll:altpll_component|                                                                                                         ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pll:pll_inst|altpll:altpll_component                                                                                                                                                                                                                                                                                                       ; altpll                            ; work         ;
+;          |pll_altpll:auto_generated|                                                                                                    ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated                                                                                                                                                                                                                                                                             ; pll_altpll                        ; work         ;
+;    |pzdyqx:nabboc|                                                                                                                      ; 122 (0)             ; 72 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pzdyqx:nabboc                                                                                                                                                                                                                                                                                                                              ; pzdyqx                            ; work         ;
+;       |pzdyqx_impl:pzdyqx_impl_inst|                                                                                                    ; 122 (12)            ; 72 (9)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst                                                                                                                                                                                                                                                                                                 ; pzdyqx_impl                       ; work         ;
+;          |GHVD5181:\cycloneiii_BITP7563_gen_0:cycloneiii_BITP7563_gen_1|                                                                ; 53 (23)             ; 28 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|GHVD5181:\cycloneiii_BITP7563_gen_0:cycloneiii_BITP7563_gen_1                                                                                                                                                                                                                                   ; GHVD5181                          ; work         ;
+;             |LQYT7093:MBPH5020|                                                                                                         ; 30 (30)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|GHVD5181:\cycloneiii_BITP7563_gen_0:cycloneiii_BITP7563_gen_1|LQYT7093:MBPH5020                                                                                                                                                                                                                 ; LQYT7093                          ; work         ;
+;          |KIFI3548:TPOO7242|                                                                                                            ; 13 (13)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|KIFI3548:TPOO7242                                                                                                                                                                                                                                                                               ; KIFI3548                          ; work         ;
+;          |LQYT7093:LRYQ7721|                                                                                                            ; 22 (22)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|LQYT7093:LRYQ7721                                                                                                                                                                                                                                                                               ; LQYT7093                          ; work         ;
+;          |PUDL0439:ESUL0435|                                                                                                            ; 22 (22)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|PUDL0439:ESUL0435                                                                                                                                                                                                                                                                               ; PUDL0439                          ; work         ;
+;    |sld_hub:auto_hub|                                                                                                                   ; 120 (1)             ; 76 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
+;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 119 (0)             ; 76 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
+;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 119 (0)             ; 76 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
+;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 119 (1)             ; 76 (5)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                    ; alt_sld_fab_alt_sld_fab           ; alt_sld_fab  ;
+;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 118 (0)             ; 71 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab_alt_sld_fab_sldfabric ; alt_sld_fab  ;
+;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 118 (81)            ; 71 (43)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; sld_jtag_hub                      ; work         ;
+;                      |sld_rom_sr:hub_info_reg|                                                                                          ; 19 (19)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; sld_rom_sr                        ; work         ;
+;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 18 (18)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; sld_shadow_jsm                    ; altera_sld   ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                         ;
++---------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+----------------------+
+; Name                                                                                                                            ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                  ;
++---------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+----------------------+
+; nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120|altsyncram:altsyncram_component0|altsyncram_8n91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 8192         ; 9            ; --           ; --           ; 73728 ; nco_nco_ii_0_sin.hex ;
+; nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121|altsyncram:altsyncram_component0|altsyncram_3n91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 8192         ; 9            ; --           ; --           ; 73728 ; nco_nco_ii_0_cos.hex ;
++---------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                                                                                              ;
++--------+---------------+---------+--------------+---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+; Vendor ; IP Core Name  ; Version ; Release Date ; License Type  ; Entity Instance                                                                                                                                                                                                                                                            ; IP Include File     ;
++--------+---------------+---------+--------------+---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+; Altera ; Signal Tap    ; N/A     ; N/A          ; Licensed      ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                 ;                     ;
+; Altera ; Signal Tap    ; N/A     ; N/A          ; Licensed      ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                             ;                     ;
+; Altera ; Signal Tap    ; N/A     ; N/A          ; Licensed      ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_presplit:presplit   ;                     ;
+; Altera ; Signal Tap    ; N/A     ; N/A          ; Licensed      ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric ;                     ;
+; Altera ; Signal Tap    ; N/A     ; N/A          ; Licensed      ; |nco_t|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_splitter:splitter   ;                     ;
+; Altera ; ALTPLL        ; 24.1    ; N/A          ; N/A           ; |nco_t|pll:pll_inst                                                                                                                                                                                                                                                        ; ipcore/pll/pll.v    ;
+; N/A    ; altera_nco_ii ; 24.1    ; N/A          ; N/A           ; |nco_t|nco:u0                                                                                                                                                                                                                                                              ; ipcore/nco/nco.qsys ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|segment_sel:rot                                                                                                                                                                                                                        ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|sid_2c_1p:sid2c                                                                                                                                                                                                                        ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|segment_arr_tdl:tdl                                                                                                                                                                                                                    ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_xnqg:u011                                                                                                                                                                                                                          ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000                                                                                                                                                                                                                   ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_dxx_g:ux001                                                                                                                                                                                                                        ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_dxx:ux002                                                                                                                                                                                                                          ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_gar:ux007                                                                                                                                                                                                                          ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120                                                                                                                                                                                                                ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121                                                                                                                                                                                                                ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_mob_rw:ux122                                                                                                                                                                                                                   ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_aprid_dxx:ux0219                                                                                                                                                                                                               ;                     ;
+; Altera ; NCO Compiler  ; N/A     ; N/A          ; OpenCore Plus ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr                                                                                                                                                                                                                 ;                     ;
++--------+---------------+---------+--------------+---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+OpenCore Plus Hardware Evaluation feature is turned on for all cores in the design.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                        ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+; Register name                                                                          ; Reason for Removal                                                               ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+; nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000|phi_int_arr_reg[2,3,6,7,10,11,14,15] ; Stuck at GND due to stuck port data_in                                           ;
+; nco:u0|nco_nco_ii_0:nco_ii_0|sid_2c_1p:sid2c|cos_reg[8]                                ; Lost fanout                                                                      ;
+; nco:u0|nco_nco_ii_0:nco_ii_0|sid_2c_1p:sid2c|sin_reg[8]                                ; Lost fanout                                                                      ;
+; nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000|phi_int_arr_reg[1,4,5,8,9,12,13]     ; Merged with nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000|phi_int_arr_reg[0] ;
+; nco:u0|nco_nco_ii_0:nco_ii_0|asj_dxx_g:ux001|dxxrv[0..2]                               ; Lost fanout                                                                      ;
+; Total Number of Removed Registers = 20                                                 ;                                                                                  ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 312   ;
+; Number of registers using Synchronous Clear  ; 85    ;
+; Number of registers using Synchronous Load   ; 17    ;
+; Number of registers using Asynchronous Clear ; 55    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 73    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                                                                                                                                                                                                                                                              ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                                                                                                                                                                                                                                                               ; Fan out ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 2       ;
+; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
+; Total number of inverted registers = 2                                                                                                                                                                                                                                                                                          ;         ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
+; 3:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|asj_gar:ux007|rom_add[2]                    ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |nco_t|nco:u0|nco_nco_ii_0:nco_ii_0|segment_sel:rot|sin_o[3]                    ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 44 LEs               ; 8 LEs                  ; Yes        ; |nco_t|pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|PUDL0439:ESUL0435|YROJ4113[3] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pll:pll_inst|altpll:altpll_component ;
++-------------------------------+-----------------------+---------------------------+
+; Parameter Name                ; Value                 ; Type                      ;
++-------------------------------+-----------------------+---------------------------+
+; OPERATION_MODE                ; NORMAL                ; Untyped                   ;
+; PLL_TYPE                      ; AUTO                  ; Untyped                   ;
+; LPM_HINT                      ; CBX_MODULE_PREFIX=pll ; Untyped                   ;
+; QUALIFY_CONF_DONE             ; OFF                   ; Untyped                   ;
+; COMPENSATE_CLOCK              ; CLK0                  ; Untyped                   ;
+; SCAN_CHAIN                    ; LONG                  ; Untyped                   ;
+; PRIMARY_CLOCK                 ; INCLK0                ; Untyped                   ;
+; INCLK0_INPUT_FREQUENCY        ; 20000                 ; Signed Integer            ;
+; INCLK1_INPUT_FREQUENCY        ; 0                     ; Untyped                   ;
+; GATE_LOCK_SIGNAL              ; NO                    ; Untyped                   ;
+; GATE_LOCK_COUNTER             ; 0                     ; Untyped                   ;
+; LOCK_HIGH                     ; 1                     ; Untyped                   ;
+; LOCK_LOW                      ; 1                     ; Untyped                   ;
+; VALID_LOCK_MULTIPLIER         ; 1                     ; Untyped                   ;
+; INVALID_LOCK_MULTIPLIER       ; 5                     ; Untyped                   ;
+; SWITCH_OVER_ON_LOSSCLK        ; OFF                   ; Untyped                   ;
+; SWITCH_OVER_ON_GATED_LOCK     ; OFF                   ; Untyped                   ;
+; ENABLE_SWITCH_OVER_COUNTER    ; OFF                   ; Untyped                   ;
+; SKIP_VCO                      ; OFF                   ; Untyped                   ;
+; SWITCH_OVER_COUNTER           ; 0                     ; Untyped                   ;
+; SWITCH_OVER_TYPE              ; AUTO                  ; Untyped                   ;
+; FEEDBACK_SOURCE               ; EXTCLK0               ; Untyped                   ;
+; BANDWIDTH                     ; 0                     ; Untyped                   ;
+; BANDWIDTH_TYPE                ; AUTO                  ; Untyped                   ;
+; SPREAD_FREQUENCY              ; 0                     ; Untyped                   ;
+; DOWN_SPREAD                   ; 0                     ; Untyped                   ;
+; SELF_RESET_ON_GATED_LOSS_LOCK ; OFF                   ; Untyped                   ;
+; SELF_RESET_ON_LOSS_LOCK       ; OFF                   ; Untyped                   ;
+; CLK9_MULTIPLY_BY              ; 0                     ; Untyped                   ;
+; CLK8_MULTIPLY_BY              ; 0                     ; Untyped                   ;
+; CLK7_MULTIPLY_BY              ; 0                     ; Untyped                   ;
+; CLK6_MULTIPLY_BY              ; 0                     ; Untyped                   ;
+; CLK5_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK4_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK3_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK2_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK1_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK0_MULTIPLY_BY              ; 2                     ; Signed Integer            ;
+; CLK9_DIVIDE_BY                ; 0                     ; Untyped                   ;
+; CLK8_DIVIDE_BY                ; 0                     ; Untyped                   ;
+; CLK7_DIVIDE_BY                ; 0                     ; Untyped                   ;
+; CLK6_DIVIDE_BY                ; 0                     ; Untyped                   ;
+; CLK5_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK4_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK3_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK2_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK1_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK0_DIVIDE_BY                ; 1                     ; Signed Integer            ;
+; CLK9_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK8_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK7_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK6_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK5_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK4_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK3_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK2_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK1_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK0_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK5_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK4_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK3_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK2_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK1_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK0_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK9_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK8_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK7_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK6_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK5_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK4_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK3_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK2_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK1_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK0_DUTY_CYCLE               ; 50                    ; Signed Integer            ;
+; CLK9_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK8_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK7_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK6_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK5_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK4_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK3_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK2_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK1_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK0_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK9_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK8_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK7_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK6_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK5_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK4_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK3_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK2_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK1_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK0_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; LOCK_WINDOW_UI                ;  0.05                 ; Untyped                   ;
+; LOCK_WINDOW_UI_BITS           ; UNUSED                ; Untyped                   ;
+; VCO_RANGE_DETECTOR_LOW_BITS   ; UNUSED                ; Untyped                   ;
+; VCO_RANGE_DETECTOR_HIGH_BITS  ; UNUSED                ; Untyped                   ;
+; DPA_MULTIPLY_BY               ; 0                     ; Untyped                   ;
+; DPA_DIVIDE_BY                 ; 1                     ; Untyped                   ;
+; DPA_DIVIDER                   ; 0                     ; Untyped                   ;
+; EXTCLK3_MULTIPLY_BY           ; 1                     ; Untyped                   ;
+; EXTCLK2_MULTIPLY_BY           ; 1                     ; Untyped                   ;
+; EXTCLK1_MULTIPLY_BY           ; 1                     ; Untyped                   ;
+; EXTCLK0_MULTIPLY_BY           ; 1                     ; Untyped                   ;
+; EXTCLK3_DIVIDE_BY             ; 1                     ; Untyped                   ;
+; EXTCLK2_DIVIDE_BY             ; 1                     ; Untyped                   ;
+; EXTCLK1_DIVIDE_BY             ; 1                     ; Untyped                   ;
+; EXTCLK0_DIVIDE_BY             ; 1                     ; Untyped                   ;
+; EXTCLK3_PHASE_SHIFT           ; 0                     ; Untyped                   ;
+; EXTCLK2_PHASE_SHIFT           ; 0                     ; Untyped                   ;
+; EXTCLK1_PHASE_SHIFT           ; 0                     ; Untyped                   ;
+; EXTCLK0_PHASE_SHIFT           ; 0                     ; Untyped                   ;
+; EXTCLK3_TIME_DELAY            ; 0                     ; Untyped                   ;
+; EXTCLK2_TIME_DELAY            ; 0                     ; Untyped                   ;
+; EXTCLK1_TIME_DELAY            ; 0                     ; Untyped                   ;
+; EXTCLK0_TIME_DELAY            ; 0                     ; Untyped                   ;
+; EXTCLK3_DUTY_CYCLE            ; 50                    ; Untyped                   ;
+; EXTCLK2_DUTY_CYCLE            ; 50                    ; Untyped                   ;
+; EXTCLK1_DUTY_CYCLE            ; 50                    ; Untyped                   ;
+; EXTCLK0_DUTY_CYCLE            ; 50                    ; Untyped                   ;
+; VCO_MULTIPLY_BY               ; 0                     ; Untyped                   ;
+; VCO_DIVIDE_BY                 ; 0                     ; Untyped                   ;
+; SCLKOUT0_PHASE_SHIFT          ; 0                     ; Untyped                   ;
+; SCLKOUT1_PHASE_SHIFT          ; 0                     ; Untyped                   ;
+; VCO_MIN                       ; 0                     ; Untyped                   ;
+; VCO_MAX                       ; 0                     ; Untyped                   ;
+; VCO_CENTER                    ; 0                     ; Untyped                   ;
+; PFD_MIN                       ; 0                     ; Untyped                   ;
+; PFD_MAX                       ; 0                     ; Untyped                   ;
+; M_INITIAL                     ; 0                     ; Untyped                   ;
+; M                             ; 0                     ; Untyped                   ;
+; N                             ; 1                     ; Untyped                   ;
+; M2                            ; 1                     ; Untyped                   ;
+; N2                            ; 1                     ; Untyped                   ;
+; SS                            ; 1                     ; Untyped                   ;
+; C0_HIGH                       ; 0                     ; Untyped                   ;
+; C1_HIGH                       ; 0                     ; Untyped                   ;
+; C2_HIGH                       ; 0                     ; Untyped                   ;
+; C3_HIGH                       ; 0                     ; Untyped                   ;
+; C4_HIGH                       ; 0                     ; Untyped                   ;
+; C5_HIGH                       ; 0                     ; Untyped                   ;
+; C6_HIGH                       ; 0                     ; Untyped                   ;
+; C7_HIGH                       ; 0                     ; Untyped                   ;
+; C8_HIGH                       ; 0                     ; Untyped                   ;
+; C9_HIGH                       ; 0                     ; Untyped                   ;
+; C0_LOW                        ; 0                     ; Untyped                   ;
+; C1_LOW                        ; 0                     ; Untyped                   ;
+; C2_LOW                        ; 0                     ; Untyped                   ;
+; C3_LOW                        ; 0                     ; Untyped                   ;
+; C4_LOW                        ; 0                     ; Untyped                   ;
+; C5_LOW                        ; 0                     ; Untyped                   ;
+; C6_LOW                        ; 0                     ; Untyped                   ;
+; C7_LOW                        ; 0                     ; Untyped                   ;
+; C8_LOW                        ; 0                     ; Untyped                   ;
+; C9_LOW                        ; 0                     ; Untyped                   ;
+; C0_INITIAL                    ; 0                     ; Untyped                   ;
+; C1_INITIAL                    ; 0                     ; Untyped                   ;
+; C2_INITIAL                    ; 0                     ; Untyped                   ;
+; C3_INITIAL                    ; 0                     ; Untyped                   ;
+; C4_INITIAL                    ; 0                     ; Untyped                   ;
+; C5_INITIAL                    ; 0                     ; Untyped                   ;
+; C6_INITIAL                    ; 0                     ; Untyped                   ;
+; C7_INITIAL                    ; 0                     ; Untyped                   ;
+; C8_INITIAL                    ; 0                     ; Untyped                   ;
+; C9_INITIAL                    ; 0                     ; Untyped                   ;
+; C0_MODE                       ; BYPASS                ; Untyped                   ;
+; C1_MODE                       ; BYPASS                ; Untyped                   ;
+; C2_MODE                       ; BYPASS                ; Untyped                   ;
+; C3_MODE                       ; BYPASS                ; Untyped                   ;
+; C4_MODE                       ; BYPASS                ; Untyped                   ;
+; C5_MODE                       ; BYPASS                ; Untyped                   ;
+; C6_MODE                       ; BYPASS                ; Untyped                   ;
+; C7_MODE                       ; BYPASS                ; Untyped                   ;
+; C8_MODE                       ; BYPASS                ; Untyped                   ;
+; C9_MODE                       ; BYPASS                ; Untyped                   ;
+; C0_PH                         ; 0                     ; Untyped                   ;
+; C1_PH                         ; 0                     ; Untyped                   ;
+; C2_PH                         ; 0                     ; Untyped                   ;
+; C3_PH                         ; 0                     ; Untyped                   ;
+; C4_PH                         ; 0                     ; Untyped                   ;
+; C5_PH                         ; 0                     ; Untyped                   ;
+; C6_PH                         ; 0                     ; Untyped                   ;
+; C7_PH                         ; 0                     ; Untyped                   ;
+; C8_PH                         ; 0                     ; Untyped                   ;
+; C9_PH                         ; 0                     ; Untyped                   ;
+; L0_HIGH                       ; 1                     ; Untyped                   ;
+; L1_HIGH                       ; 1                     ; Untyped                   ;
+; G0_HIGH                       ; 1                     ; Untyped                   ;
+; G1_HIGH                       ; 1                     ; Untyped                   ;
+; G2_HIGH                       ; 1                     ; Untyped                   ;
+; G3_HIGH                       ; 1                     ; Untyped                   ;
+; E0_HIGH                       ; 1                     ; Untyped                   ;
+; E1_HIGH                       ; 1                     ; Untyped                   ;
+; E2_HIGH                       ; 1                     ; Untyped                   ;
+; E3_HIGH                       ; 1                     ; Untyped                   ;
+; L0_LOW                        ; 1                     ; Untyped                   ;
+; L1_LOW                        ; 1                     ; Untyped                   ;
+; G0_LOW                        ; 1                     ; Untyped                   ;
+; G1_LOW                        ; 1                     ; Untyped                   ;
+; G2_LOW                        ; 1                     ; Untyped                   ;
+; G3_LOW                        ; 1                     ; Untyped                   ;
+; E0_LOW                        ; 1                     ; Untyped                   ;
+; E1_LOW                        ; 1                     ; Untyped                   ;
+; E2_LOW                        ; 1                     ; Untyped                   ;
+; E3_LOW                        ; 1                     ; Untyped                   ;
+; L0_INITIAL                    ; 1                     ; Untyped                   ;
+; L1_INITIAL                    ; 1                     ; Untyped                   ;
+; G0_INITIAL                    ; 1                     ; Untyped                   ;
+; G1_INITIAL                    ; 1                     ; Untyped                   ;
+; G2_INITIAL                    ; 1                     ; Untyped                   ;
+; G3_INITIAL                    ; 1                     ; Untyped                   ;
+; E0_INITIAL                    ; 1                     ; Untyped                   ;
+; E1_INITIAL                    ; 1                     ; Untyped                   ;
+; E2_INITIAL                    ; 1                     ; Untyped                   ;
+; E3_INITIAL                    ; 1                     ; Untyped                   ;
+; L0_MODE                       ; BYPASS                ; Untyped                   ;
+; L1_MODE                       ; BYPASS                ; Untyped                   ;
+; G0_MODE                       ; BYPASS                ; Untyped                   ;
+; G1_MODE                       ; BYPASS                ; Untyped                   ;
+; G2_MODE                       ; BYPASS                ; Untyped                   ;
+; G3_MODE                       ; BYPASS                ; Untyped                   ;
+; E0_MODE                       ; BYPASS                ; Untyped                   ;
+; E1_MODE                       ; BYPASS                ; Untyped                   ;
+; E2_MODE                       ; BYPASS                ; Untyped                   ;
+; E3_MODE                       ; BYPASS                ; Untyped                   ;
+; L0_PH                         ; 0                     ; Untyped                   ;
+; L1_PH                         ; 0                     ; Untyped                   ;
+; G0_PH                         ; 0                     ; Untyped                   ;
+; G1_PH                         ; 0                     ; Untyped                   ;
+; G2_PH                         ; 0                     ; Untyped                   ;
+; G3_PH                         ; 0                     ; Untyped                   ;
+; E0_PH                         ; 0                     ; Untyped                   ;
+; E1_PH                         ; 0                     ; Untyped                   ;
+; E2_PH                         ; 0                     ; Untyped                   ;
+; E3_PH                         ; 0                     ; Untyped                   ;
+; M_PH                          ; 0                     ; Untyped                   ;
+; C1_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C2_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C3_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C4_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C5_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C6_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C7_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C8_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C9_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; CLK0_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK1_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK2_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK3_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK4_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK5_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK6_COUNTER                  ; E0                    ; Untyped                   ;
+; CLK7_COUNTER                  ; E1                    ; Untyped                   ;
+; CLK8_COUNTER                  ; E2                    ; Untyped                   ;
+; CLK9_COUNTER                  ; E3                    ; Untyped                   ;
+; L0_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; L1_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; G0_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; G1_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; G2_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; G3_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; E0_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; E1_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; E2_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; E3_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; M_TIME_DELAY                  ; 0                     ; Untyped                   ;
+; N_TIME_DELAY                  ; 0                     ; Untyped                   ;
+; EXTCLK3_COUNTER               ; E3                    ; Untyped                   ;
+; EXTCLK2_COUNTER               ; E2                    ; Untyped                   ;
+; EXTCLK1_COUNTER               ; E1                    ; Untyped                   ;
+; EXTCLK0_COUNTER               ; E0                    ; Untyped                   ;
+; ENABLE0_COUNTER               ; L0                    ; Untyped                   ;
+; ENABLE1_COUNTER               ; L0                    ; Untyped                   ;
+; CHARGE_PUMP_CURRENT           ; 2                     ; Untyped                   ;
+; LOOP_FILTER_R                 ;  1.000000             ; Untyped                   ;
+; LOOP_FILTER_C                 ; 5                     ; Untyped                   ;
+; CHARGE_PUMP_CURRENT_BITS      ; 9999                  ; Untyped                   ;
+; LOOP_FILTER_R_BITS            ; 9999                  ; Untyped                   ;
+; LOOP_FILTER_C_BITS            ; 9999                  ; Untyped                   ;
+; VCO_POST_SCALE                ; 0                     ; Untyped                   ;
+; CLK2_OUTPUT_FREQUENCY         ; 0                     ; Untyped                   ;
+; CLK1_OUTPUT_FREQUENCY         ; 0                     ; Untyped                   ;
+; CLK0_OUTPUT_FREQUENCY         ; 0                     ; Untyped                   ;
+; INTENDED_DEVICE_FAMILY        ; Cyclone IV E          ; Untyped                   ;
+; PORT_CLKENA0                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA1                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA2                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA3                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA4                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA5                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_EXTCLKENA0               ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_EXTCLKENA1               ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_EXTCLKENA2               ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_EXTCLKENA3               ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_EXTCLK0                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_EXTCLK1                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_EXTCLK2                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_EXTCLK3                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKBAD0                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKBAD1                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK0                     ; PORT_USED             ; Untyped                   ;
+; PORT_CLK1                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK2                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK3                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK4                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK5                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK6                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK7                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK8                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK9                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANDATA                 ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANDATAOUT              ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANDONE                 ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCLKOUT1                 ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_SCLKOUT0                 ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_ACTIVECLOCK              ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKLOSS                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_INCLK1                   ; PORT_UNUSED           ; Untyped                   ;
+; PORT_INCLK0                   ; PORT_USED             ; Untyped                   ;
+; PORT_FBIN                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_PLLENA                   ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKSWITCH                ; PORT_UNUSED           ; Untyped                   ;
+; PORT_ARESET                   ; PORT_USED             ; Untyped                   ;
+; PORT_PFDENA                   ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANCLK                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANACLR                 ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANREAD                 ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANWRITE                ; PORT_UNUSED           ; Untyped                   ;
+; PORT_ENABLE0                  ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_ENABLE1                  ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_LOCKED                   ; PORT_USED             ; Untyped                   ;
+; PORT_CONFIGUPDATE             ; PORT_UNUSED           ; Untyped                   ;
+; PORT_FBOUT                    ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_PHASEDONE                ; PORT_UNUSED           ; Untyped                   ;
+; PORT_PHASESTEP                ; PORT_UNUSED           ; Untyped                   ;
+; PORT_PHASEUPDOWN              ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANCLKENA               ; PORT_UNUSED           ; Untyped                   ;
+; PORT_PHASECOUNTERSELECT       ; PORT_UNUSED           ; Untyped                   ;
+; PORT_VCOOVERRANGE             ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_VCOUNDERRANGE            ; PORT_CONNECTIVITY     ; Untyped                   ;
+; M_TEST_SOURCE                 ; 5                     ; Untyped                   ;
+; C0_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C1_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C2_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C3_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C4_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C5_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C6_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C7_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C8_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C9_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; CBXI_PARAMETER                ; pll_altpll            ; Untyped                   ;
+; VCO_FREQUENCY_CONTROL         ; AUTO                  ; Untyped                   ;
+; VCO_PHASE_SHIFT_STEP          ; 0                     ; Untyped                   ;
+; WIDTH_CLOCK                   ; 5                     ; Signed Integer            ;
+; WIDTH_PHASECOUNTERSELECT      ; 4                     ; Untyped                   ;
+; USING_FBMIMICBIDIR_PORT       ; OFF                   ; Untyped                   ;
+; DEVICE_FAMILY                 ; Cyclone IV E          ; Untyped                   ;
+; SCAN_CHAIN_MIF_FILE           ; UNUSED                ; Untyped                   ;
+; SIM_GATE_LOCK_DEVICE_BEHAVIOR ; OFF                   ; Untyped                   ;
+; AUTO_CARRY_CHAINS             ; ON                    ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS          ; OFF                   ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS           ; ON                    ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS        ; OFF                   ; IGNORE_CASCADE            ;
++-------------------------------+-----------------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nco:u0|nco_nco_ii_0:nco_ii_0 ;
++----------------+----------------------+-----------------------------------+
+; Parameter Name ; Value                ; Type                              ;
++----------------+----------------------+-----------------------------------+
+; mpr            ; 10                   ; Signed Integer                    ;
+; apr            ; 16                   ; Signed Integer                    ;
+; apri           ; 16                   ; Signed Integer                    ;
+; aprf           ; 32                   ; Signed Integer                    ;
+; aprp           ; 16                   ; Signed Integer                    ;
+; aprid          ; 21                   ; Signed Integer                    ;
+; dpri           ; 4                    ; Signed Integer                    ;
+; rdw            ; 9                    ; Signed Integer                    ;
+; raw            ; 13                   ; Signed Integer                    ;
+; rnw            ; 8192                 ; Signed Integer                    ;
+; rsf            ; nco_nco_ii_0_sin.hex ; String                            ;
+; rcf            ; nco_nco_ii_0_cos.hex ; String                            ;
+; nc             ; 1                    ; Signed Integer                    ;
+; log2nc         ; 0                    ; Signed Integer                    ;
+; outselinit     ; -1                   ; Signed Integer                    ;
+; paci0          ; 0                    ; Signed Integer                    ;
+; paci1          ; 0                    ; Signed Integer                    ;
+; paci2          ; 0                    ; Signed Integer                    ;
+; paci3          ; 0                    ; Signed Integer                    ;
+; paci4          ; 0                    ; Signed Integer                    ;
+; paci5          ; 0                    ; Signed Integer                    ;
+; paci6          ; 0                    ; Signed Integer                    ;
+; paci7          ; 0                    ; Signed Integer                    ;
+; hyper_pipeline ; 0                    ; Signed Integer                    ;
++----------------+----------------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; altpll Parameter Settings by Entity Instance                         ;
++-------------------------------+--------------------------------------+
+; Name                          ; Value                                ;
++-------------------------------+--------------------------------------+
+; Number of entity instances    ; 1                                    ;
+; Entity Instance               ; pll:pll_inst|altpll:altpll_component ;
+;     -- OPERATION_MODE         ; NORMAL                               ;
+;     -- PLL_TYPE               ; AUTO                                 ;
+;     -- PRIMARY_CLOCK          ; INCLK0                               ;
+;     -- INCLK0_INPUT_FREQUENCY ; 20000                                ;
+;     -- INCLK1_INPUT_FREQUENCY ; 0                                    ;
+;     -- VCO_MULTIPLY_BY        ; 0                                    ;
+;     -- VCO_DIVIDE_BY          ; 0                                    ;
++-------------------------------+--------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "nco:u0|nco_nco_ii_0:nco_ii_0|segment_sel:rot" ;
++-------+--------+----------+----------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                      ;
++-------+--------+----------+----------------------------------------------+
+; cos_o ; Output ; Info     ; Explicitly unconnected                       ;
++-------+--------+----------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_aprid_dxx:ux0219"                                                                        ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                      ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; pcc_d ; Output ; Warning  ; Output or bidir port (22 bits) is wider than the port expression (21 bits) it drives; bit(s) "pcc_d[21..21]" have no fanouts ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nco:u0"                                                                                                                                                                                          ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                             ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; clken             ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; phi_inc_i         ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; phi_inc_i[13..12] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; phi_inc_i[9..8]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; phi_inc_i[5..4]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; phi_inc_i[1..0]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; phi_inc_i[15..14] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; phi_inc_i[11..10] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; phi_inc_i[7..6]   ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; phi_inc_i[3..2]   ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; fsin_o            ; Output ; Warning  ; Output or bidir port (10 bits) is wider than the port expression (8 bits) it drives; bit(s) "fsin_o[9..8]" have no fanouts                                                          ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 12                          ;
+; cycloneiii_ff         ; 164                         ;
+;     CLR               ; 17                          ;
+;     SCLR              ; 55                          ;
+;     SLD               ; 5                           ;
+;     plain             ; 87                          ;
+; cycloneiii_lcell_comb ; 191                         ;
+;     arith             ; 47                          ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 23                          ;
+;     normal            ; 144                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 105                         ;
+; cycloneiii_pll        ; 1                           ;
+; cycloneiii_ram_block  ; 16                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.50                        ;
+; Average LUT depth     ; 1.52                        ;
++-----------------------+-----------------------------+
+
+
++---------------------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Partition pzdyqx:nabboc ;
++-----------------------+---------------------------------------+
+; Type                  ; Count                                 ;
++-----------------------+---------------------------------------+
+; boundary_port         ; 15                                    ;
+; cycloneiii_ff         ; 72                                    ;
+;     CLR               ; 2                                     ;
+;     ENA               ; 13                                    ;
+;     ENA CLR           ; 10                                    ;
+;     ENA CLR SLD       ; 3                                     ;
+;     SCLR              ; 18                                    ;
+;     plain             ; 26                                    ;
+; cycloneiii_lcell_comb ; 122                                   ;
+;     arith             ; 4                                     ;
+;         2 data inputs ; 4                                     ;
+;     normal            ; 118                                   ;
+;         1 data inputs ; 24                                    ;
+;         2 data inputs ; 20                                    ;
+;         3 data inputs ; 23                                    ;
+;         4 data inputs ; 51                                    ;
+;                       ;                                       ;
+; Max LUT depth         ; 14.00                                 ;
+; Average LUT depth     ; 3.01                                  ;
++-----------------------+---------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
+; pzdyqx:nabboc  ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Fri Apr 25 17:29:17 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off nco_t -c nco_t
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 32 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/nco.v
+    Info (12023): Found entity 1: nco File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/nco.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/sid_2c_1p.v
+    Info (12023): Found entity 1: sid_2c_1p File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/sid_2c_1p.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_nco_aprid_dxx.v
+    Info (12023): Found entity 1: asj_nco_aprid_dxx File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_aprid_dxx.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_nco_mob_rw.v
+    Info (12023): Found entity 1: asj_nco_mob_rw File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_mob_rw.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_gar.v
+    Info (12023): Found entity 1: asj_gar File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_gar.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_nco_isdr.v
+    Info (12023): Found entity 1: asj_nco_isdr File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_isdr.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/segment_arr_tdl.v
+    Info (12023): Found entity 1: segment_arr_tdl File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/segment_arr_tdl.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/segment_sel.v
+    Info (12023): Found entity 1: segment_sel File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/segment_sel.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_dxx_g.v
+    Info (12023): Found entity 1: asj_dxx_g File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_dxx_g.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_dxx.v
+    Info (12023): Found entity 1: asj_dxx File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_dxx.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_xnqg.v
+    Info (12023): Found entity 1: asj_xnqg File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_xnqg.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v
+    Info (12023): Found entity 1: asj_nco_as_m_cen File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/asj_altqmcpipe.v
+    Info (12023): Found entity 1: asj_altqmcpipe File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_altqmcpipe.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v
+    Info (12023): Found entity 1: nco_nco_ii_0 File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v
+    Info (12023): Found entity 1: nco_t File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/pll/pll.v
+    Info (12023): Found entity 1: pll File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at nco_t.v(11): created implicit net for "rst" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at nco_t.v(30): created implicit net for "da_clk_en" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v Line: 30
+Info (12127): Elaborating entity "nco_t" for the top level hierarchy
+Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v Line: 20
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll_inst|altpll:altpll_component" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v Line: 104
+Info (12130): Elaborated megafunction instantiation "pll:pll_inst|altpll:altpll_component" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v Line: 104
+Info (12133): Instantiated megafunction "pll:pll_inst|altpll:altpll_component" with the following parameter: File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v Line: 104
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk0_divide_by" = "1"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "2"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "20000"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=pll"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_USED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
+    Info (12023): Found entity 1: pll_altpll File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/pll_altpll.v Line: 31
+Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated" File: /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "nco" for hierarchy "nco:u0" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v Line: 31
+Info (12128): Elaborating entity "nco_nco_ii_0" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/nco.v Line: 22
+Info (12128): Elaborating entity "asj_xnqg" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_xnqg:u011" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 311
+Info (12128): Elaborating entity "segment_arr_tdl" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|segment_arr_tdl:tdl" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 320
+Info (12128): Elaborating entity "asj_altqmcpipe" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 331
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000|lpm_add_sub:acc" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_altqmcpipe.v Line: 63
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_15i.tdf
+    Info (12023): Found entity 1: add_sub_15i File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/add_sub_15i.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_15i" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_altqmcpipe:ux000|lpm_add_sub:acc|add_sub_15i:auto_generated" File: /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 119
+Info (12128): Elaborating entity "asj_dxx_g" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_dxx_g:ux001" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 349
+Info (12128): Elaborating entity "asj_dxx" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_dxx:ux002" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 358
+Info (12128): Elaborating entity "asj_nco_aprid_dxx" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_aprid_dxx:ux0219" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 365
+Info (12128): Elaborating entity "asj_gar" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_gar:ux007" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 376
+Info (12128): Elaborating entity "sid_2c_1p" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|sid_2c_1p:sid2c" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 389
+Info (12128): Elaborating entity "asj_nco_as_m_cen" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 397
+Info (12128): Elaborating entity "altsyncram" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120|altsyncram:altsyncram_component0" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v Line: 65
+Info (12130): Elaborated megafunction instantiation "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120|altsyncram:altsyncram_component0" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v Line: 65
+Info (12133): Instantiated megafunction "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120|altsyncram:altsyncram_component0" with the following parameter: File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v Line: 65
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "width_a" = "9"
+    Info (12134): Parameter "widthad_a" = "13"
+    Info (12134): Parameter "numwords_a" = "8192"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "init_file" = "nco_nco_ii_0_sin.hex"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8n91.tdf
+    Info (12023): Found entity 1: altsyncram_8n91 File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/altsyncram_8n91.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_8n91" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120|altsyncram:altsyncram_component0|altsyncram_8n91:auto_generated" File: /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "asj_nco_as_m_cen" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 410
+Info (12128): Elaborating entity "altsyncram" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121|altsyncram:altsyncram_component0" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v Line: 65
+Info (12130): Elaborated megafunction instantiation "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121|altsyncram:altsyncram_component0" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v Line: 65
+Info (12133): Instantiated megafunction "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121|altsyncram:altsyncram_component0" with the following parameter: File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v Line: 65
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "width_a" = "9"
+    Info (12134): Parameter "widthad_a" = "13"
+    Info (12134): Parameter "numwords_a" = "8192"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "init_file" = "nco_nco_ii_0_cos.hex"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3n91.tdf
+    Info (12023): Found entity 1: altsyncram_3n91 File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/altsyncram_3n91.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_3n91" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121|altsyncram:altsyncram_component0|altsyncram_3n91:auto_generated" File: /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "segment_sel" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|segment_sel:rot" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 429
+Info (12128): Elaborating entity "asj_nco_mob_rw" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_mob_rw:ux122" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 438
+Info (12128): Elaborating entity "asj_nco_isdr" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v Line: 449
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr|lpm_counter:lpm_counter_component" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_isdr.v Line: 59
+Info (12130): Elaborated megafunction instantiation "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr|lpm_counter:lpm_counter_component" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_isdr.v Line: 59
+Info (12133): Instantiated megafunction "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr|lpm_counter:lpm_counter_component" with the following parameter: File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/asj_nco_isdr.v Line: 59
+    Info (12134): Parameter "lpm_width" = "4"
+    Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
+    Info (12134): Parameter "lpm_direction" = "UP"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_asi.tdf
+    Info (12023): Found entity 1: cntr_asi File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/cntr_asi.tdf Line: 26
+Info (12128): Elaborating entity "cntr_asi" for hierarchy "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_isdr:ux710isdr|lpm_counter:lpm_counter_component|cntr_asi:auto_generated" File: /home/visier/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
+Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
+Info (11172): 2025.04.25.17:29:25 Progress: Loading slddbe70644/alt_sld_fab_wrapper_hw.tcl
+Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
+Info (11172): Alt_sld_fab: Generating "alt_sld_fab" for QUARTUS_SYNTH
+Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
+Info (11172): Presplit: "alt_sld_fab" instantiated altera_super_splitter "presplit"
+Info (11172): Splitter: "alt_sld_fab" instantiated altera_sld_splitter "splitter"
+Info (11172): Sldfabric: "alt_sld_fab" instantiated altera_sld_jtag_hub "sldfabric"
+Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification_hub "ident"
+Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
+Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/slddbe70644/alt_sld_fab.v
+    Info (12023): Found entity 1: alt_sld_fab File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/alt_sld_fab.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab.v
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_ident.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/ip/slddbe70644/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0121|altsyncram:altsyncram_component0|altsyncram_3n91:auto_generated|q_a[8]" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/altsyncram_3n91.tdf Line: 212
+        Warning (14320): Synthesized away node "nco:u0|nco_nco_ii_0:nco_ii_0|asj_nco_as_m_cen:ux0120|altsyncram:altsyncram_component0|altsyncram_8n91:auto_generated|q_a[8]" File: /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/altsyncram_8n91.tdf Line: 212
+Warning (12188): Intel FPGA IP Evaluation Mode feature is turned on for the following cores
+    Warning (12190): "NCO Compiler" will use the Intel FPGA IP Evaluation Mode feature
+Warning (265072): Messages from megafunction that supports Intel FPGA IP Evaluation Mode feature
+    Warning (265073): Messages from megafunction that supports Intel FPGA IP Evaluation Mode feature NCO MegaCore
+        Warning (265074): The output signals fsin_o and fcos_o are forced low when the evaluation time expires
+Warning (265069): Megafunction that supports Intel FPGA IP Evaluation Mode feature will stop functioning in 1 hour after device is programmed
+Info (265071): Evaluation period of megafunction that supports Intel FPGA IP Evaluation Mode feature can be extended indefinitely by using tethered operation
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286031): Timing-Driven Synthesis is running on partition "Top"
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (286031): Timing-Driven Synthesis is running on partition "pzdyqx:nabboc"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 493 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 460 logic cells
+    Info (21064): Implemented 16 RAM segments
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 738 megabytes
+    Info: Processing ended: Fri Apr 25 17:29:32 2025
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:28
+
+

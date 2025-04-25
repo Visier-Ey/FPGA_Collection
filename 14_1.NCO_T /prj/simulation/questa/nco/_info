@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/simulation/questa
+vnco
+2/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/nco.v
+Z1 !s110 1745571749
+!i10b 1
+!s100 ?B`8]RP:VXaQL]mRI6CZZ2
+IHMkcSGWNR=H2^KX7^_<KH1
+R0
+Z2 w1745570785
+8/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/nco.v
+F/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/nco.v
+!i122 6
+L0 6 19
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z5 !s108 1745571749.000000
+!s107 /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/nco.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nco|+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis|/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/nco.v|
+!i113 0
+Z6 o-vlog01compat -work nco -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work nco {+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vnco_nco_ii_0
+2/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v
+R1
+!i10b 1
+!s100 dnIk6Ef9VZ`;87LVA@eZL0
+Io`dL<<`]PPdDKBoP7PjO:0
+R0
+R2
+8/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v
+F/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v
+!i122 7
+L0 23 434
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nco|+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules|/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules/nco_nco_ii_0.v|
+!i113 0
+R6
+!s92 -vlog01compat -work nco {+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/nco/nco/synthesis/submodules} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7

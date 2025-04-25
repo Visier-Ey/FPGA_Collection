@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Apr 15 14:13:53 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : ip_pll
+Top-level Entity Name : ip_pll
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 260 / 10,320 ( 3 % )
+    Total combinational functions : 258 / 10,320 ( 3 % )
+    Dedicated logic registers : 114 / 10,320 ( 1 % )
+Total registers : 114
+Total pins : 20 / 180 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

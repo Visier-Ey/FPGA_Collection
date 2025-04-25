@@ -1,0 +1,69 @@
+|top_key_beep
+sys_clk => sys_clk.IN2
+sys_rst_n => sys_rst_n.IN2
+key => key.IN1
+beep << beep_control:beep_control_inst.beep
+
+
+|top_key_beep|key_debounce:key_debounce_inst
+sys_clk => key_value~reg0.CLK
+sys_clk => key_flag~reg0.CLK
+sys_clk => key_state.CLK
+sys_clk => delay_cnt[0].CLK
+sys_clk => delay_cnt[1].CLK
+sys_clk => delay_cnt[2].CLK
+sys_clk => delay_cnt[3].CLK
+sys_clk => delay_cnt[4].CLK
+sys_clk => delay_cnt[5].CLK
+sys_clk => delay_cnt[6].CLK
+sys_clk => delay_cnt[7].CLK
+sys_clk => delay_cnt[8].CLK
+sys_clk => delay_cnt[9].CLK
+sys_clk => delay_cnt[10].CLK
+sys_clk => delay_cnt[11].CLK
+sys_clk => delay_cnt[12].CLK
+sys_clk => delay_cnt[13].CLK
+sys_clk => delay_cnt[14].CLK
+sys_clk => delay_cnt[15].CLK
+sys_clk => delay_cnt[16].CLK
+sys_clk => delay_cnt[17].CLK
+sys_clk => delay_cnt[18].CLK
+sys_clk => delay_cnt[19].CLK
+sys_rst_n => key_state.PRESET
+sys_rst_n => delay_cnt[0].ACLR
+sys_rst_n => delay_cnt[1].ACLR
+sys_rst_n => delay_cnt[2].ACLR
+sys_rst_n => delay_cnt[3].ACLR
+sys_rst_n => delay_cnt[4].ACLR
+sys_rst_n => delay_cnt[5].ACLR
+sys_rst_n => delay_cnt[6].ACLR
+sys_rst_n => delay_cnt[7].ACLR
+sys_rst_n => delay_cnt[8].ACLR
+sys_rst_n => delay_cnt[9].ACLR
+sys_rst_n => delay_cnt[10].ACLR
+sys_rst_n => delay_cnt[11].ACLR
+sys_rst_n => delay_cnt[12].ACLR
+sys_rst_n => delay_cnt[13].ACLR
+sys_rst_n => delay_cnt[14].ACLR
+sys_rst_n => delay_cnt[15].ACLR
+sys_rst_n => delay_cnt[16].ACLR
+sys_rst_n => delay_cnt[17].ACLR
+sys_rst_n => delay_cnt[18].ACLR
+sys_rst_n => delay_cnt[19].ACLR
+sys_rst_n => key_value~reg0.PRESET
+sys_rst_n => key_flag~reg0.ACLR
+key => always0.IN1
+key => key_state.DATAIN
+key => key_value~reg0.DATAIN
+key_value <= key_value~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_flag <= key_flag~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_key_beep|beep_control:beep_control_inst
+sys_clk => beep~reg0.CLK
+sys_rst_n => beep~reg0.ACLR
+key_value => always0.IN0
+key_flag => always0.IN1
+beep <= beep~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

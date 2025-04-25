@@ -1,0 +1,140 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/simulation/questa
+T_opt
+!s110 1744801389
+V_AoeMMF9J3i:mZjQLSDlM3
+Z2 04 15 4 work ip_1port_ram_tb fast 0
+=1-000ae431a4f1-67ff8e6d-40300-c1b0
+R0
+Z3 !s12f OEM100
+Z4 !s12b OEM100
+Z5 !s124 OEM10U4 
+Z6 !s135 nogc
+Z7 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2024.3;79
+R1
+T_opt1
+Z10 !s110 1744802112
+VkDXPLil0ZP_5ZKQQo=go_0
+R2
+=1-000ae431a4f1-67ff9140-b684b-e79d
+R0
+R3
+R4
+R5
+R6
+R7
+R8
+n@_opt1
+R9
+vip_1port_ram
+2/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ip_1port_ram.v
+R10
+!i10b 1
+!s100 Q3j7;ZYTz7@7N:ZEcM@<X2
+IfJM8>h0o0:bMbi^?zaJio3
+R1
+w1744799291
+8/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ip_1port_ram.v
+F/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ip_1port_ram.v
+!i122 1
+L0 1 34
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z13 !s108 1744802112.000000
+!s107 /home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ip_1port_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl|/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ip_1port_ram.v|
+!i113 0
+Z14 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 !s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vip_1port_ram_tb
+2/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb/ip_1port_ram_tb.v
+R10
+!i10b 1
+!s100 i@5SEiUFY7U9PeJPkHCDZ3
+IQN0M6Vl5TJ3]]@AIgTCS>0
+R1
+w1744799552
+8/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb/ip_1port_ram_tb.v
+F/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb/ip_1port_ram_tb.v
+!i122 3
+L0 4 25
+R11
+R12
+r1
+!s85 0
+31
+R13
+!s107 /home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb/ip_1port_ram_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb|/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb/ip_1port_ram_tb.v|
+!i113 0
+R14
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/../sim/tb -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vram_1port
+2/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore/ram_1port.v
+R10
+!i10b 1
+!s100 cF3PGRM9[]>JkEjT9cQ2D0
+I4Ia72@9GTA42:SPYmW]<b3
+R1
+w1744802105
+8/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore/ram_1port.v
+F/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore/ram_1port.v
+!i122 2
+L0 40 68
+R11
+R12
+r1
+!s85 0
+31
+R13
+!s107 /home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore/ram_1port.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore|/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore/ram_1port.v|
+!i113 0
+R14
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/par/ipcore -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vram_rw
+2/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ram_rw.v
+R10
+!i10b 1
+!s100 XVAFZ8C^XmMELPLXXdkA=3
+IS>e0Sbf_X^;M]GAK?dTX^0
+R1
+w1744800819
+8/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ram_rw.v
+F/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ram_rw.v
+!i122 0
+L0 1 45
+R11
+R12
+r1
+!s85 0
+31
+R13
+!s107 /home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ram_rw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl|/home/visier/FPGA_Porject/VisierCustom/8.ip_1port_ram/rtl/ram_rw.v|
+!i113 0
+R14
+R15
+R8

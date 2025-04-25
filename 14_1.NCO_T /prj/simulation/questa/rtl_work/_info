@@ -1,0 +1,108 @@
+m255
+K4
+z2
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/simulation/questa
+vnco_t
+2/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v
+Z1 !s110 1745571749
+!i10b 1
+!s100 dhYj9K7BcFkzMal;QIT<M3
+I`5RKe1YM]5BAoHOK;gAYC1
+R0
+w1745571546
+8/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v
+F/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v
+!i122 0
+L0 1 30
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z4 !s108 1745571749.000000
+!s107 /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl|/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl/nco_t.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work {+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /rtl} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vNCO_tb
+2/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/../sim/NCO_tb.v
+R1
+!i10b 1
+!s100 Z3fH[CkFk9O4JHoWg@@S:0
+I[kdT=nLWXO[JO[UXLj32H1
+R0
+w1745571440
+8/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/../sim/NCO_tb.v
+F/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/../sim/NCO_tb.v
+!i122 3
+L0 3 49
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/../sim/NCO_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/../sim|/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/../sim/NCO_tb.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work {+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/../sim} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+n@n@c@o_tb
+vpll
+2/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v
+R1
+!i10b 1
+!s100 a;R4L_1eSN1KJBQPOKHkG2
+IB7n]03o48_@QPgC[]eH8^1
+R0
+w1745570707
+8/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v
+F/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v
+!i122 1
+L0 40 124
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll|/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll/pll.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work {+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/ipcore/pll} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vpll_altpll
+2/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/pll_altpll.v
+R1
+!i10b 1
+!s100 8:Vj9]8SOJVa]EU;?X<c_3
+IHC[Sd>^cS6GP:0k=^PMFP1
+R0
+w1745571002
+8/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/pll_altpll.v
+F/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/pll_altpll.v
+!i122 2
+L0 31 79
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db|/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db/pll_altpll.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work {+incdir+/home/visier/FPGA_Porject/VisierCustom/14_1.NCO_T /prj/db} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
