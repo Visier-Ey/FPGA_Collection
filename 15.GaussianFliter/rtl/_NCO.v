@@ -7,16 +7,8 @@ module _NCO #(
     input reset_n,
     input [PHASE_WIDTH-1:0] phi_inc_i,
     output wire [OUTPUT_WIDTH-1:0] sin_out,
-    output reg out_valid,
-    output nco_clk
+    output reg out_valid
 );
-
-// ! nco_clk
-reg nco_clk_reg = 0;
-always @(posedge clk) begin
-    nco_clk_reg <= ~nco_clk_reg;  
-end
-assign nco_clk = nco_clk_reg;
 
 // ! Phase accumulator
 reg [PHASE_WIDTH-1:0] phase_accum;

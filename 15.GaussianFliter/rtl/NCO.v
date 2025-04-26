@@ -30,16 +30,16 @@ module NCO # (
   // ! NOC output
   wire nco_clk;
   wire nco_vaild;
+  assign nco_clk = clk_100m;
   // # DA Output
   wire [7:0] _da_data;
 
   _NCO noc_u (
-    .clk        ( clk_100m ),
+    .clk        ( nco_clk ),
     .reset_n    ( rst ),
     .phi_inc_i  ( FCW ),
     .sin_out    ( _da_data ),
-    .out_valid  ( nco_vaild ),
-    .nco_clk    ( nco_clk )
+    .out_valid  ( nco_vaild )
   );
 
   // ! Gaussian filter
@@ -52,7 +52,7 @@ module NCO # (
   );
 
   // ! DA output
-  assign da_data = _da_data;
+  assign da_data = _da_data_flitered;
   assign da_clk = nco_vaild & nco_clk;
 
 
