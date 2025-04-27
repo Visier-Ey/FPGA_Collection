@@ -42,6 +42,10 @@
 				{
 					"name" : "sys_rst_n",
 					"strict" : false
+				},
+				{
+					"name" : "data_in",
+					"strict" : false
 				}
 			]
 		}

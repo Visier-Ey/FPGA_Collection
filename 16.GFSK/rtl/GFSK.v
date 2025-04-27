@@ -1,12 +1,11 @@
 module gfsk_modulator#(
-    parameter BASE_FWC = 655;
+    parameter BASE_FWC = 655
 ) (
     input sys_clk,      
     input sys_rst_n,         
     input data_in,       
     output [7:0] da_data,
-    output da_clk,
-    output [10:0] fwc
+    output da_clk
 );
     // ! PLL
     wire locked;
@@ -53,5 +52,4 @@ module gfsk_modulator#(
     // ! DA output
     assign da_data = _da_data;
     assign da_clk = nco_vaild & nco_clk;
-    assign fwc = _da_data_flitered;
 endmodule

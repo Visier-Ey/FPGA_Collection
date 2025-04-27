@@ -13,15 +13,13 @@ module gfsk_modulator_tb;
     // 修改后的测试参数
     parameter CLK_PERIOD = 20;  // 50MHz系统时钟（周期20ns）
     parameter BIT_PERIOD = 1000; // 保持1Mbps数据速率
-    wire [10:0] fwc;
     // 实例化被测模块
     gfsk_modulator uut (
         .sys_clk(sys_clk),
         .sys_rst_n(sys_rst_n),
         .data_in(data_in),
         .da_data(da_data),
-        .da_clk(da_clk),
-        .fwc(fwc) // 这里可以连接到其他模块或信号
+        .da_clk(da_clk)
     );
     
     // 系统时钟生成（50MHz）

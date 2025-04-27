@@ -1,5 +1,5 @@
 module NCO # (
-   parameter FCW = 655  // * Frequency Control Word
+   parameter FCW = 6554  // * Frequency Control Word
    // * 1M here
    // ! FCW=​fout​×2^N/fclk
 ) (
@@ -18,6 +18,7 @@ module NCO # (
 	.areset ( ~sys_rst_n ),
 	.inclk0 ( sys_clk ),
 	.c0 ( clk_100m ),
+  .c1 ( clk_50m ),
 	.locked ( locked )
 	);
 

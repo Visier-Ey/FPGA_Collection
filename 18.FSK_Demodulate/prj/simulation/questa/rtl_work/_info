@@ -1,0 +1,220 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/simulation/questa
+v_NCO
+2/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/_NCO.v
+Z2 !s110 1745759648
+!i10b 1
+!s100 L6Y_onbJd?GQ;SBT^TbO`0
+I3nFgi[baP[8BEE7DIc^DN2
+R1
+w1745635276
+8/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/_NCO.v
+F/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/_NCO.v
+!i122 0
+L0 1 48
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z5 !s108 1745759648.000000
+!s107 /home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/_NCO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl|/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/_NCO.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+n@_@n@c@o
+T_opt
+R2
+V26i=3IKZ`BGXAaV4go_I42
+04 17 4 work fsk_demodulate_tb fast 0
+=1-000ae431a4f1-680e2da0-87796-1070f
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U7 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+R8
+n@_opt
+OL;O;2024.3;79
+vfsk_demodulate
+2/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/FSK_demodulate.v
+R2
+!i10b 1
+!s100 gM]AR7kS7?dc1F6JXmh<^1
+InjlOMTE@@]Z9@2:aE>1LQ3
+R1
+w1745759641
+8/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/FSK_demodulate.v
+F/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/FSK_demodulate.v
+!i122 5
+L0 1 66
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/FSK_demodulate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl|/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/FSK_demodulate.v|
+!i113 0
+R6
+R7
+R8
+vfsk_demodulate_tb
+2/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/../sim/fsk_demodulator_tb.v
+R2
+!i10b 1
+!s100 YOaSXc`N45>cA^`BWRCGh0
+I3^42_bNi:S3[0nehd8J:z1
+R1
+w1745759155
+8/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/../sim/fsk_demodulator_tb.v
+F/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/../sim/fsk_demodulator_tb.v
+!i122 7
+L0 2 33
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/../sim/fsk_demodulator_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/../sim|/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/../sim/fsk_demodulator_tb.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vgaussian_filter
+2/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GaussianFliter.v
+R2
+!i10b 1
+!s100 O1Y9=3=hn1hh@6]Vi>Rf52
+IanPkS26ATH3>f?njMW;O41
+R1
+w1745636986
+8/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GaussianFliter.v
+F/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GaussianFliter.v
+!i122 1
+L0 1 43
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GaussianFliter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl|/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GaussianFliter.v|
+!i113 0
+R6
+R7
+R8
+vgfsk_modulator
+2/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GFSK.v
+R2
+!i10b 1
+!s100 Z01Shn9QL7UHKNf?]iIk93
+Idk42JL9KiRTHMgYmi1hWV0
+R1
+w1745759232
+8/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GFSK.v
+F/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GFSK.v
+!i122 2
+L0 1 56
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GFSK.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl|/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/rtl/GFSK.v|
+!i113 0
+R6
+R7
+R8
+vpll
+2/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/pll/pll.v
+R2
+!i10b 1
+!s100 PldL6o[5z:LAT]XF;:JB32
+I]`:Ul92AhN<GI<>W;MD3@2
+R1
+w1745589163
+8/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/pll/pll.v
+F/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/pll/pll.v
+!i122 3
+L0 40 140
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/pll/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/pll|/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/pll/pll.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/pll -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vpll_altpll
+2/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/db/pll_altpll.v
+R2
+!i10b 1
+!s100 GgUH8[fzo06ISQkGzPg1<3
+ICJoZ8RMJHSGAkB=l4Z@9R1
+R1
+w1745757511
+8/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/db/pll_altpll.v
+F/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/db/pll_altpll.v
+!i122 6
+L0 31 87
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/db|/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/db/pll_altpll.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vrom_256x8b
+2/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/rom/rom_256x8b.v
+R2
+!i10b 1
+!s100 dX;XO^IG>z]OoPJT4_oPW1
+IPL4UZA66WoX:LjKL0=icm2
+R1
+w1745581287
+8/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/rom/rom_256x8b.v
+F/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/rom/rom_256x8b.v
+!i122 4
+L0 40 61
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/rom/rom_256x8b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/rom|/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/rom/rom_256x8b.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Demodulate/prj/ipcore/rom -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8

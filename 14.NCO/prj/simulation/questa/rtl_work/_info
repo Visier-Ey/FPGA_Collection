@@ -13,7 +13,7 @@ cModel Technology
 Z1 d/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/simulation/questa
 v_NCO
 2/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/_NCO.v
-Z2 !s110 1745584610
+Z2 !s110 1745642940
 !i10b 1
 !s100 Z0ZGlE4XFTQ7FR:O88UDP0
 IWgMG1o@=^2Z8jL]@9FJ0F0
@@ -28,7 +28,7 @@ Z4 OL;L;2024.3;79
 r1
 !s85 0
 31
-Z5 !s108 1745584610.000000
+Z5 !s108 1745642940.000000
 !s107 /home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/_NCO.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl|/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/_NCO.v|
 !i113 0
@@ -37,10 +37,10 @@ Z7 !s92 -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/
 Z8 tCvgOpt 0
 n@_@n@c@o
 T_opt
-!s110 1745584611
-V@P06KCSC^h>?@47FR7UfI3
+Z9 !s110 1745642941
+VZ2maoKA:3mmeM5>d1i^OI1
 04 6 4 work NCO_tb fast 0
-=1-000ae431a4f1-680b81e3-14c72-dbd5
+=1-000ae431a4f1-680c65bd-2d698-4277
 R0
 !s12f OEM100
 !s12b OEM100
@@ -54,14 +54,14 @@ vNCO
 2/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/NCO.v
 R2
 !i10b 1
-!s100 nNzZadVib4>VCGKFblzQk2
-I?Ld]TbOifKZXYdRPoX@1H1
+!s100 AX`2<zRa2zC^]jToGK<::0
+Il8nl_fJReac;KgiG51oTM3
 R1
-w1745584586
+w1745642928
 8/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/NCO.v
 F/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/NCO.v
 !i122 1
-L0 1 46
+L0 1 47
 R3
 R4
 r1
@@ -77,7 +77,7 @@ R8
 n@n@c@o
 vNCO_tb
 2/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/../sim/NCO_tb.v
-R2
+R9
 !i10b 1
 !s100 ?2La`81jk:Z>XnHI2_nR41
 IIc7Zge4@go1_83=@;^PY03
@@ -92,7 +92,7 @@ R4
 r1
 !s85 0
 31
-R5
+Z10 !s108 1745642941.000000
 !s107 /home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/../sim/NCO_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/../sim|/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/../sim/NCO_tb.v|
 !i113 0
@@ -104,14 +104,14 @@ vpll
 2/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/pll/pll.v
 R2
 !i10b 1
-!s100 a;R4L_1eSN1KJBQPOKHkG2
-IFe5cgiCg?AL4Hn@GKjLEC2
+!s100 CNDQ2ia>CBL47k?glZOhP0
+ILR9f90U`[0BIm331W0eK:2
 R1
-w1745578952
+w1745642909
 8/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/pll/pll.v
 F/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/pll/pll.v
 !i122 2
-L0 40 124
+L0 40 132
 R3
 R4
 r1
@@ -126,7 +126,7 @@ R6
 R8
 vpll_altpll
 2/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/db/pll_altpll.v
-R2
+R9
 !i10b 1
 !s100 8:Vj9]8SOJVa]EU;?X<c_3
 IDMiXZVJcL8TRMFg3`eZM22
@@ -141,7 +141,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 /home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/db/pll_altpll.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/db|/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/db/pll_altpll.v|
 !i113 0

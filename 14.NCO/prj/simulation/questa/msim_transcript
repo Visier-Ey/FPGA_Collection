@@ -25,69 +25,69 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl {/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/_NCO.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 20:36:50 on Apr 25,2025
+# Start time: 12:49:00 on Apr 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl" /home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/_NCO.v 
 # -- Compiling module _NCO
 # 
 # Top level modules:
 # 	_NCO
-# End time: 20:36:50 on Apr 25,2025, Elapsed time: 0:00:00
+# End time: 12:49:00 on Apr 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl {/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/NCO.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 20:36:50 on Apr 25,2025
+# Start time: 12:49:00 on Apr 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl" /home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/NCO.v 
 # -- Compiling module NCO
 # 
 # Top level modules:
 # 	NCO
-# End time: 20:36:50 on Apr 25,2025, Elapsed time: 0:00:00
+# End time: 12:49:00 on Apr 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/pll {/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/pll/pll.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 20:36:50 on Apr 25,2025
+# Start time: 12:49:00 on Apr 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/pll" /home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/pll/pll.v 
 # -- Compiling module pll
 # 
 # Top level modules:
 # 	pll
-# End time: 20:36:50 on Apr 25,2025, Elapsed time: 0:00:00
+# End time: 12:49:00 on Apr 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/rom {/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/rom/rom_256x8b.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 20:36:50 on Apr 25,2025
+# Start time: 12:49:00 on Apr 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/rom" /home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/ipcore/rom/rom_256x8b.v 
 # -- Compiling module rom_256x8b
 # 
 # Top level modules:
 # 	rom_256x8b
-# End time: 20:36:50 on Apr 25,2025, Elapsed time: 0:00:00
+# End time: 12:49:00 on Apr 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/db {/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/db/pll_altpll.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 20:36:50 on Apr 25,2025
+# Start time: 12:49:01 on Apr 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/db" /home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/db/pll_altpll.v 
 # -- Compiling module pll_altpll
 # 
 # Top level modules:
 # 	pll_altpll
-# End time: 20:36:50 on Apr 25,2025, Elapsed time: 0:00:00
+# End time: 12:49:01 on Apr 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/../sim {/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/../sim/NCO_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 20:36:50 on Apr 25,2025
+# Start time: 12:49:01 on Apr 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/../sim" /home/visier/FPGA_Porject/VisierCustom/14.NCO/prj/../sim/NCO_tb.v 
 # -- Compiling module NCO_tb
 # 
 # Top level modules:
 # 	NCO_tb
-# End time: 20:36:50 on Apr 25,2025, Elapsed time: 0:00:00
+# End time: 12:49:01 on Apr 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  NCO_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" NCO_tb 
-# Start time: 20:36:50 on Apr 25,2025
+# Start time: 12:49:01 on Apr 26,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -108,7 +108,7 @@
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'phi_inc_i'. The port definition is at: /home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/_NCO.v(8).
-#    Time: 0 ps  Iteration: 0  Instance: /NCO_tb/uut/noc_u File: /home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/NCO.v Line: 33
+#    Time: 0 ps  Iteration: 0  Instance: /NCO_tb/uut/noc_u File: /home/visier/FPGA_Porject/VisierCustom/14.NCO/rtl/NCO.v Line: 34
 # 
 # add wave *
 # view structure
@@ -121,6 +121,6 @@
 #  Note : Cyclone IV E PLL locked to incoming clock
 # Time: 190000  Instance: NCO_tb.uut.pll_inst.altpll_component.cycloneiii_pll.pll3
 # Break key hit
-# Break in Module MF_cycloneiii_pll at /home/visier/altera_lite/24.1std/questa_fse/linux_x86_64/../intel/verilog/src/altera_mf.v line 16979
-# End time: 20:37:20 on Apr 25,2025, Elapsed time: 0:00:30
+# Simulation stop requested.
+# End time: 12:49:16 on Apr 26,2025, Elapsed time: 0:00:15
 # Errors: 0, Warnings: 2

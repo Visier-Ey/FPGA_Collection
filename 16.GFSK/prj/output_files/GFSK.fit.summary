@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri Apr 25 23:34:49 2025
+Fitter Status : Successful - Sat Apr 26 13:06:09 2025
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : GFSK
-Top-level Entity Name : NCO
+Top-level Entity Name : gfsk_modulator
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 62 / 10,320 ( < 1 % )
-    Total combinational functions : 55 / 10,320 ( < 1 % )
-    Dedicated logic registers : 49 / 10,320 ( < 1 % )
-Total registers : 49
-Total pins : 11 / 180 ( 6 % )
+Total logic elements : 45 / 10,320 ( < 1 % )
+    Total combinational functions : 44 / 10,320 ( < 1 % )
+    Dedicated logic registers : 28 / 10,320 ( < 1 % )
+Total registers : 28
+Total pins : 12 / 180 ( 7 % )
 Total virtual pins : 0
 Total memory bits : 2,048 / 423,936 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )

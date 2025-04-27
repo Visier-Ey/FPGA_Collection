@@ -15,8 +15,9 @@ da_clk <= da_clk.DB_MAX_OUTPUT_PORT_TYPE
 
 |NCO|pll:pll_inst
 areset => areset.IN1
-inclk0 => sub_wire4[0].IN1
+inclk0 => sub_wire5[0].IN1
 c0 <= altpll:altpll_component.clk
+c1 <= altpll:altpll_component.clk
 locked <= altpll:altpll_component.locked
 
 

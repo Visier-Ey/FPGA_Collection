@@ -3,15 +3,15 @@ sys_clk => sys_clk.IN1
 sys_rst_n => rst.IN1
 sys_rst_n => _.IN1
 data_in => data_in.IN1
-da_data[0] <= _NCO:noc_u.sin_out
-da_data[1] <= _NCO:noc_u.sin_out
-da_data[2] <= _NCO:noc_u.sin_out
-da_data[3] <= _NCO:noc_u.sin_out
-da_data[4] <= _NCO:noc_u.sin_out
-da_data[5] <= _NCO:noc_u.sin_out
-da_data[6] <= _NCO:noc_u.sin_out
-da_data[7] <= _NCO:noc_u.sin_out
-da_clk <= da_clk.DB_MAX_OUTPUT_PORT_TYPE
+da_data[0] << _NCO:noc_u.sin_out
+da_data[1] << _NCO:noc_u.sin_out
+da_data[2] << _NCO:noc_u.sin_out
+da_data[3] << _NCO:noc_u.sin_out
+da_data[4] << _NCO:noc_u.sin_out
+da_data[5] << _NCO:noc_u.sin_out
+da_data[6] << _NCO:noc_u.sin_out
+da_data[7] << _NCO:noc_u.sin_out
+da_clk << da_clk.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |gfsk_modulator|pll:pll_inst
@@ -105,6 +105,9 @@ clk => filtered_out[4]~reg0.CLK
 clk => filtered_out[5]~reg0.CLK
 clk => filtered_out[6]~reg0.CLK
 clk => filtered_out[7]~reg0.CLK
+clk => filtered_out[8]~reg0.CLK
+clk => filtered_out[9]~reg0.CLK
+clk => filtered_out[10]~reg0.CLK
 clk => shift_reg[0].CLK
 clk => shift_reg[1].CLK
 clk => shift_reg[2].CLK
@@ -118,6 +121,9 @@ rst_n => filtered_out[4]~reg0.ACLR
 rst_n => filtered_out[5]~reg0.ACLR
 rst_n => filtered_out[6]~reg0.ACLR
 rst_n => filtered_out[7]~reg0.ACLR
+rst_n => filtered_out[8]~reg0.ACLR
+rst_n => filtered_out[9]~reg0.ACLR
+rst_n => filtered_out[10]~reg0.ACLR
 rst_n => shift_reg[0].ACLR
 rst_n => shift_reg[1].ACLR
 rst_n => shift_reg[2].ACLR
@@ -132,6 +138,9 @@ filtered_out[4] <= filtered_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 filtered_out[5] <= filtered_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 filtered_out[6] <= filtered_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 filtered_out[7] <= filtered_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+filtered_out[8] <= filtered_out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+filtered_out[9] <= filtered_out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+filtered_out[10] <= filtered_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |gfsk_modulator|_NCO:noc_u

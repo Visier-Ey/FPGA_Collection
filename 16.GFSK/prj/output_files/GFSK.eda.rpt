@@ -1,5 +1,5 @@
 EDA Netlist Writer report for GFSK
-Fri Apr 25 23:34:53 2025
+Sat Apr 26 13:06:13 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -37,9 +37,9 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Apr 25 23:34:53 2025 ;
+; EDA Netlist Writer Status ; Successful - Sat Apr 26 13:06:13 2025 ;
 ; Revision Name             ; GFSK                                  ;
-; Top-level Entity Name     ; NCO                                   ;
+; Top-level Entity Name     ; gfsk_modulator                        ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -81,13 +81,13 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Fri Apr 25 23:34:52 2025
+    Info: Processing started: Sat Apr 26 13:06:12 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off GFSK -c GFSK
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file GFSK.vo in folder "/home/visier/FPGA_Porject/VisierCustom/16.GFSK/prj/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 794 megabytes
-    Info: Processing ended: Fri Apr 25 23:34:53 2025
+    Info: Processing ended: Sat Apr 26 13:06:13 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
