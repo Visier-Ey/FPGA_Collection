@@ -25,99 +25,99 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/ipcore/pll {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/ipcore/pll/pll.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:00 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/ipcore/pll" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/ipcore/pll/pll.v 
 # -- Compiling module pll
 # 
 # Top level modules:
 # 	pll
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:00 on Apr 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/ipcore/rom {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/ipcore/rom/rom_256x8b.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:00 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/ipcore/rom" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/ipcore/rom/rom_256x8b.v 
 # -- Compiling module rom_256x8b
 # 
 # Top level modules:
 # 	rom_256x8b
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:00 on Apr 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/_NCO.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:00 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/_NCO.v 
 # -- Compiling module _NCO
 # 
 # Top level modules:
 # 	_NCO
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:00 on Apr 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/FSK_demodulator.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:00 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/FSK_demodulator.v 
 # -- Compiling module fsk_demodulator
 # 
 # Top level modules:
 # 	fsk_demodulator
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:00 on Apr 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/GaussianFliter.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:00 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/GaussianFliter.v 
 # -- Compiling module gaussian_filter
 # 
 # Top level modules:
 # 	gaussian_filter
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:01 on Apr 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/FSK_Zero.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:01 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/FSK_Zero.v 
 # -- Compiling module FSK_Zero
 # 
 # Top level modules:
 # 	FSK_Zero
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:01 on Apr 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/GFSK_modulator.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:01 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/rtl/GFSK_modulator.v 
 # -- Compiling module gfsk_modulator
 # 
 # Top level modules:
 # 	gfsk_modulator
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:01 on Apr 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/db {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/db/pll_altpll.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:01 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/db" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/db/pll_altpll.v 
 # -- Compiling module pll_altpll
 # 
 # Top level modules:
 # 	pll_altpll
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:01 on Apr 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/../sim {/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/../sim/fsk_zero_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:01 on Apr 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/../sim" /home/visier/FPGA_Porject/VisierCustom/18.FSK_Zero/prj/../sim/fsk_zero_tb.v 
 # -- Compiling module fsk_zero_tb
 # 
 # Top level modules:
 # 	fsk_zero_tb
-# End time: 22:51:48 on Apr 27,2025, Elapsed time: 0:00:00
+# End time: 22:31:01 on Apr 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  fsk_zero_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" fsk_zero_tb 
-# Start time: 22:51:48 on Apr 27,2025
+# Start time: 22:31:01 on Apr 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -154,6 +154,6 @@
 #  Note : Cyclone IV E PLL locked to incoming clock
 # Time: 190000  Instance: fsk_zero_tb.uut.uudt.pll_inst.altpll_component.cycloneiii_pll.pll3
 # Break key hit
-# Break in Module MF_cycloneiii_pll at /home/visier/altera_lite/24.1std/questa_fse/linux_x86_64/../intel/verilog/src/altera_mf.v line 16982
-# End time: 22:52:01 on Apr 27,2025, Elapsed time: 0:00:13
+# Break in Module MF_cycloneiii_pll at /home/visier/altera_lite/24.1std/questa_fse/linux_x86_64/../intel/verilog/src/altera_mf.v line 16978
+# End time: 22:31:51 on Apr 28,2025, Elapsed time: 0:00:50
 # Errors: 0, Warnings: 2

@@ -18,7 +18,7 @@ module FSK_Zero (
 
     // ! FSK demodulator
     fsk_demodulator uut (
-         .clk(da_clk),          
+         .clk(sys_clk),          
          .rst_n(sys_rst_n),           
          .ad_data(da_data),  
          .demodulated_bit(demodulated_bit)   

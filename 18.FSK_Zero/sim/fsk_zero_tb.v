@@ -19,7 +19,7 @@ module fsk_zero_tb();
 
       // 修改后的测试参数
     parameter CLK_PERIOD = 20;  // 50MHz系统时钟（周期20ns）
-    parameter BIT_PERIOD = 1000; // 保持1Mbps数据速率
+    parameter BIT_PERIOD = 10000; // 保持100kbps数据速率
 
      initial begin
         sys_clk = 0;
@@ -38,7 +38,7 @@ module fsk_zero_tb();
         wait(sys_rst_n);
         
         // 发送测试序列：01010101
-        repeat(1000) begin
+        repeat(10000) begin
             data_in = 1;
             #BIT_PERIOD;
             data_in = 0;
@@ -46,7 +46,7 @@ module fsk_zero_tb();
         end
         
         // 发送随机数据
-        repeat(2000) begin
+        repeat(20000) begin
             data_in = $random % 2;
             #BIT_PERIOD;
         end
