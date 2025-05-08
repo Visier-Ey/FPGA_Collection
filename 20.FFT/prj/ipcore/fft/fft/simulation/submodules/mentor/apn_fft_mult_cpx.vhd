@@ -1,0 +1,100 @@
+-- (C) 2001-2025 Altera Corporation. All rights reserved.
+-- This simulation model contains highly confidential and
+-- proprietary information of Altera and is being provided
+-- in accordance with and subject to the protections of the
+-- applicable Altera Program License Subscription Agreement
+-- which governs its use and disclosure. Your use of Altera
+-- Corporation's design tools, logic functions and other
+-- software and tools, and its AMPP partner logic functions,
+-- and any output files from any of the foregoing (including device
+-- programming or simulation files), and any associated
+-- documentation or information are expressly subject to the
+-- terms and conditions of the Altera Program License Subscription
+-- Agreement, Altera IP License Agreement, or other
+-- applicable license agreement, including, without limitation,
+-- that your use is for the sole purpose of simulating designs
+-- for use exclusively in logic devices manufactured by Altera and sold
+-- by Altera or its authorized distributors. Please refer to the
+-- applicable agreement for further details. Altera products and
+-- services are protected under numerous U.S. and foreign patents,
+-- maskwork rights, copyrights and other intellectual property laws.
+-- Altera assumes no responsibility or liability arising out of the
+-- application or use of this simulation model.
+-- ACDS 24.1
+`protect BEGIN_PROTECTED
+`protect version = 1
+`protect author = "Altera"
+`protect encrypt_agent = "Model Technology", encrypt_agent_info = "6.6e"
+`protect key_keyowner = "Mentor Graphics Corporation" , key_keyname = "MGC-VERIF-SIM-RSA-1" , key_method = "rsa"
+`protect encoding = (enctype = "base64", line_length = 64, bytes = 128)
+`protect KEY_BLOCK
+MiPblzEi9zlzqBXIKcrDxBaa9sO/wMSNgkHXGQSnsNI8iUTs21DtHwuuGIA6Lp3V
+SMOzSi1rKjWgB8u9xNbnt/43901ynx67Kb5xelvaJ2f7llNGOvJErZx3K0pRKeej
+rZSWFRZ0lfi4sblC0/Id5ZH8UurK9sk9PpXIfOon474=
+`protect data_method = "aes128-cbc"
+`protect encoding = (enctype = "base64", line_length = 64, bytes = 2927)
+
+`protect DATA_BLOCK
+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
+P6MpKYLL/vA9+axQlCEkfw==
+`protect END_PROTECTED

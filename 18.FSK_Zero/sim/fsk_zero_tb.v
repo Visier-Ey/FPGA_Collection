@@ -21,7 +21,7 @@ module fsk_zero_tb();
     parameter CLK_PERIOD = 20;  // 50MHz系统时钟（周期20ns）
     parameter BIT_PERIOD = 10000; // 保持100kbps数据速率
 
-     initial begin
+    initial begin
         sys_clk = 0;
         forever #(CLK_PERIOD/2) sys_clk = ~sys_clk; // 每10ns翻转一次
     end

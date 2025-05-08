@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Apr 30 18:36:14 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : FFT
+Top-level Entity Name : FFT
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 37 / 10,320 ( < 1 % )
+    Total combinational functions : 37 / 10,320 ( < 1 % )
+    Dedicated logic registers : 18 / 10,320 ( < 1 % )
+Total registers : 18
+Total pins : 12 / 180 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 2,048 / 423,936 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )
