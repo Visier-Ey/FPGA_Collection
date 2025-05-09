@@ -1,0 +1,5 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,mixer:u_mixer|lpm_mult:Mult0|mult_73t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,mixer:u_mixer|lpm_mult:Mult1|mult_73t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,lpm_mult:Mult0|mult_36t:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,mixer:u_mixer|lpm_mult:Mult0|mult_73t:auto_generated|mac_mult1,

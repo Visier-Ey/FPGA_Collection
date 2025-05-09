@@ -1,0 +1,171 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do BPSK_demodulator_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Copying /home/visier/altera_lite/24.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/loop_filter.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/loop_filter.v 
+# -- Compiling module loop_filter
+# 
+# Top level modules:
+# 	loop_filter
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v 
+# -- Compiling module FIR
+# 
+# Top level modules:
+# 	FIR
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/mixer.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/mixer.v 
+# -- Compiling module mixer
+# 
+# Top level modules:
+# 	mixer
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v 
+# -- Compiling module costas
+# 
+# Top level modules:
+# 	costas
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/_NCO.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/_NCO.v 
+# -- Compiling module _NCO
+# 
+# Top level modules:
+# 	_NCO
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll/pll.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom/rom_256x8b.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom/rom_256x8b.v 
+# -- Compiling module rom_256x8b
+# 
+# Top level modules:
+# 	rom_256x8b
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db/pll_altpll.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim {/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 09:50:31 on May 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim" /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v 
+# -- Compiling module costas_tb
+# 
+# Top level modules:
+# 	costas_tb
+# End time: 09:50:31 on May 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  costas_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" costas_tb 
+# Start time: 09:50:31 on May 09,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Warning: /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v(17): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 8, found 7.
+# ** Warning: /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v(17): (vopt-2718) [TFMPC] - Missing connection for port 'ad_clk'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.costas_tb(fast)
+# Loading work.costas(fast)
+# Loading work.pll(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.mixer(fast)
+# Loading work.FIR(fast)
+# Loading work.loop_filter(fast)
+# Loading work._NCO(fast)
+# Loading work.rom_256x8b(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work._NCO(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'fir_in'. The port definition is at: /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /costas_tb/uut/fir_I File: /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v Line: 88
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'fir_in'. The port definition is at: /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /costas_tb/uut/fir_Q File: /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v Line: 94
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: costas_tb.uut.pll_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 290000  Instance: costas_tb.uut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# Jump at             50210000: Cycle=        100, NewOffset=180.000000°
+# Jump at            100210000: Cycle=        200, NewOffset=360.000000°
+# Jump at            150210000: Cycle=        300, NewOffset=540.000000°
+# Jump at            200210000: Cycle=        400, NewOffset=720.000000°
+# Jump at            250210000: Cycle=        500, NewOffset=900.000000°
+# Jump at            300210000: Cycle=        600, NewOffset=1080.000000°
+# Break key hit
+# Simulation stop requested.
+# End time: 09:50:50 on May 09,2025, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 5

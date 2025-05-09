@@ -10,7 +10,7 @@ module loop_filter (
     parameter Kp = 2;         // 比例增益（右移位数，相当于除以2^Kp）
     // ! 12 and 8
     parameter Ki = 8;         // 积分增益（右移位数，相当于除以2^Ki）
-    parameter INIT_FREQ = 178849019;  // NCO初始频率控制字
+    parameter INIT_FREQ = 85899345;  // NCO初始频率控制字
 
     // 内部寄存器
     reg signed [31:0] integrator;  // 积分器累加值

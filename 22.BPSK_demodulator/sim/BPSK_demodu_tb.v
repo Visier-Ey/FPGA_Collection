@@ -2,7 +2,7 @@
 module costas_tb;
 
 parameter CLK_PERIOD = 20;       // 50MHz时钟
-parameter CARRIER_FREQ = 1e6;    // 2MHz载波
+parameter CARRIER_FREQ = 1e6;   
 parameter PHASE_JUMP_AMOUNT = 180;// 跳变幅度（度）
 parameter CYCLES_PER_JUMP = 100;   // 每2个完整周期跳变一次
 
@@ -10,9 +10,6 @@ reg clk;
 reg rst;
 reg [7:0] rx_signal;
 wire signed [15:0] I_out, Q_out;
-wire signed [15:0] view1;
-wire signed [31:0] view2;
-wire signed [7:0] nco_sin, nco_cos;
 wire [7:0] da_data;
 wire da_clk;
 
@@ -23,10 +20,6 @@ costas uut (
     .ad_data(rx_signal),
     .I_out(I_out),
     .Q_out(Q_out),
-    .view1(view1),
-    .view2(view2),
-    .nco_sin_(nco_sin),
-    .nco_cos_(nco_cos),
     .da_data(da_data),
     .da_clk(da_clk)
 );
@@ -74,16 +67,15 @@ task automatic generate_bpsk_with_phase_jumps;
                 end
             end
             
-            // 符号率控制（100kbps）
-            if ($time % 10000 == 0) begin // 每10us切换数据
+            if ($time % 10000 == 0) begin 
                 symbol_counter = symbol_counter + 1;
                 // data = (symbol_counter % 2) ? 1 : -1; // 交替数据
             end
             
             // 生成带相位跳变的BPSK信号
-            rx_signal = $rtoi(127.0 * $sin(phase + phase_offset) * data) + 128;
+            rx_signal = ($rtoi(127.0 * $sin(phase + phase_offset) * data) + 128);
             
-            // 更新相位（2MHz载波@50MHz采样）
+     
             phase = phase + 2.0*3.1415926*CARRIER_FREQ*1e-9*CLK_PERIOD;
             #(CLK_PERIOD/2);
         end

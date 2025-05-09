@@ -1,0 +1,263 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/simulation/questa
+v_NCO
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/_NCO.v
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1746755431
+!i10b 1
+!s100 nQl9QR2mf24lf:YP0:3860
+I>;Aon<@O2hR35IVYGMRYH1
+S1
+R1
+w1746629288
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/_NCO.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/_NCO.v
+!i122 4
+L0 1 48
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z6 !s108 1746755431.000000
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/_NCO.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/_NCO.v|
+!i113 0
+Z7 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0
+n@_@n@c@o
+T_opt
+R3
+Vl^dFh;=YiI1Y57<?;@TZh3
+04 9 4 work costas_tb fast 0
+=1-000ae431a4f1-681d5f67-9d393-3737
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U11 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+R9
+n@_opt
+OL;O;2024.3;79
+vcostas
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v
+R2
+R3
+!i10b 1
+!s100 CMNPTA0R0W29zZ4Z2EH9e0
+IaFjA265FmX86SNAg6`Qc51
+S1
+R1
+w1746755427
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v
+!i122 3
+L0 1 158
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/Costas.v|
+!i113 0
+R7
+R8
+R9
+vcostas_tb
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v
+R2
+R3
+!i10b 1
+!s100 EcZf:lYI@[APA>_BMEPm42
+Il=NoT[ijH3]kb3>z:QYW]2
+S1
+R1
+w1746719331
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v
+!i122 8
+L0 2 84
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim/BPSK_demodu_tb.v|
+!i113 0
+R7
+!s92 -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
+vFIR
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v
+R2
+R3
+!i10b 1
+!s100 O<:9o[W4bboQzS>6[99?90
+Iel[^oA1<_8]ZOE;69K5:?3
+S1
+R1
+w1746684935
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v
+!i122 1
+L0 2 55
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/FIR.v|
+!i113 0
+R7
+R8
+R9
+n@f@i@r
+vloop_filter
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/loop_filter.v
+R2
+R3
+!i10b 1
+!s100 8:nXiLh@A@T<0@Y;Gb3M81
+ITbCb31UR7A9[P>R@^KGna1
+S1
+R1
+w1746710177
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/loop_filter.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/loop_filter.v
+!i122 0
+L0 1 38
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/loop_filter.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/loop_filter.v|
+!i113 0
+R7
+R8
+R9
+vmixer
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/mixer.v
+R2
+R3
+!i10b 1
+!s100 hRnlcNG6@NlShQhHJ6kBC1
+IiZ5@^40mLP@`Y:m32D4nF0
+S1
+R1
+w1746285346
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/mixer.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/mixer.v
+!i122 2
+L0 1 26
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/mixer.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/rtl/mixer.v|
+!i113 0
+R7
+R8
+R9
+vpll
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll/pll.v
+R2
+R3
+!i10b 1
+!s100 l@G>X1H2QfmB8>dEUgcC;3
+I8=]^1jG7JGmTgjmS02kS72
+S1
+R1
+w1746697409
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll/pll.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll/pll.v
+!i122 5
+L0 40 140
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll/pll.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll/pll.v|
+!i113 0
+R7
+!s92 -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/pll -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
+vpll_altpll
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db/pll_altpll.v
+R2
+R3
+!i10b 1
+!s100 o_N^UFkDW5:]<SdY6d_8f3
+Ig6AgmW1J7]RZL2CV@@33N1
+S1
+R1
+w1746701310
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db/pll_altpll.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db/pll_altpll.v
+!i122 7
+L0 31 87
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db/pll_altpll.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db/pll_altpll.v|
+!i113 0
+R7
+!s92 -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
+vrom_256x8b
+2/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom/rom_256x8b.v
+R2
+R3
+!i10b 1
+!s100 42>DRD4NK`c<Mo7RHMJGT2
+I5OmTD^dM`?1Q`l_49eZF83
+S1
+R1
+w1745581287
+8/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom/rom_256x8b.v
+F/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom/rom_256x8b.v
+!i122 6
+L0 40 61
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom/rom_256x8b.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom|/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom/rom_256x8b.v|
+!i113 0
+R7
+!s92 -sv -work work +incdir+/home/visier/FPGA_Porject/VisierCustom/22.BPSK_demodulator/prj/ipcore/rom -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
